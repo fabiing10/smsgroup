@@ -127,18 +127,18 @@ class UsuarioController extends \BaseController {
             // Actualizar Usuario
             $usuario = Usuario::find($id);
 
-                $usuario->identificacion = Input::get('u_identificacion');
-                $usuario->nombres = Input::get('u_nombres');
-                $usuario->apellidos = Input::get('u_apellidos');
-                $usuario->fecha_nacimiento = Input::get('u_fecha_nacimiento');
-                $usuario->email = Input::get('u_email');
-                $usuario->telefono = Input::get('u_telefono');
+                $usuario->identificacion = Input::get('identificacion');
+                $usuario->nombres = Input::get('nombres');
+                $usuario->apellidos = Input::get('apellidos');
+                $usuario->fecha_nacimiento = Input::get('fecha_nacimiento');
+                $usuario->email = Input::get('email');
+                $usuario->telefono = Input::get('telefono');
                 $usuario->celular = Input::get('u_celular');
                 $usuario->active = 1;
-                $usuario->genero = Input::get('u_genero');
+                $usuario->genero = Input::get('genero');
                 $usuario->active = 1;
-                $usuario->username = Input::get('u_username');
-                $usuario->password = Hash::make(Input::get('u_password'));
+                $usuario->username = Input::get('username');
+                $usuario->password = Hash::make(Input::get('password'));
 
             $usuario->save();
             $page = Input::get('page');
