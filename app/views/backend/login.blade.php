@@ -81,7 +81,7 @@
 
                     <div class="col-sm-9 no-padding m-t-10">
                         <p><small>
-                                Antes de crear su cuenta, porfavor lea la politica y privacidad de comunicando en el siguiente link <a href="#" class="text-info">Politica</a> & <a href="#" class="text-info">Privacidad</a></small>
+                                Antes de crear su cuenta, porfavor lea la politica y privacidad de SMS Group en el siguiente link <a href="#" class="text-info">Politica</a> & <a href="#" class="text-info">Privacidad</a></small>
                         </p>
                     </div>
                 </div>

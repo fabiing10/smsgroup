@@ -38,7 +38,7 @@
 
 
     <footer>
-        <center>Copyright 2015 - Comunicando</center>
+        <center>Copyright 2015 - SMS Group</center>
     </footer>
 
 
