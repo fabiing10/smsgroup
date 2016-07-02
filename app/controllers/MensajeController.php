@@ -199,11 +199,11 @@ class MensajeController extends \BaseController {
         $parameter['fecha'] = $fecha;
         $parameter['fecha_leido'] = $fecha_leido;
         $pdf = PDF::loadView('backend.administradores.mensajes.pdf', $parameter);
-<<<<<<< HEAD
+
         return $pdf->download('reporte.pdf');
-=======
+/*
         return $pdf->stream('invoice.pdf');
->>>>>>> fec1d7fce866ecb23c601393d597f878dc014db2
+*/
     }
 
 

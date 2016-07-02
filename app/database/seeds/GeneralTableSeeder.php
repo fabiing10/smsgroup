@@ -28,7 +28,7 @@ class GeneralTableSeeder extends Seeder {
             'celular'  => '3143666151',
             'rol'  => 'super-admin',
             'username'  => 'admin',
-            'password'  =>  Hash::make("1013636219")
+            'password'  =>  Hash::make("smsgroup2016")
         ));
 
 

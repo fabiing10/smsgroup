@@ -76,12 +76,18 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
-                            <label>Zona</label>
+                            <label>Zona / Rol</label>
                             <select class="full-width" data-init-plugin="select2" id="zona_select" name="zona_select">
                                     <optgroup label="Unidad">
-                                     <option>Seleccione una Unidad</option>
+                                     <option>Seleccione una Unidad / Rol</option>
                                     @foreach($zonas as $zona)
-                                    <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->tipo }} {{ $zona->value }}</option>
+
+                                        @if($zona->tipo == "Contador" || $zona->tipo == "Revisor_Fiscal")
+                                          <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->value }}</option>
+                                        @else
+                                          <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->tipo }} - {{ $zona->value }}</option>
+                                        @endif
+
                                     @endforeach
                                 </optgroup>
                             </select>
@@ -89,7 +95,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
-                            <label>Apartamento</label>
+                            <label>Apartamento / Funcion</label>
                             <select class="full-width" data-init-plugin="select2" id="apartamento_select" name="apartamento_select">
                                 <optgroup label="Seleccione un apartamento" id="inner-html">
 

@@ -176,11 +176,11 @@ function showDetalles(value){
                         }else{
                             fecha = obj.fecha_leido;
                         }
-<<<<<<< HEAD
+
                         data = [obj.tipo+' '+obj.value ,obj.apartamento,obj.nombres,obj.apellidos,leido,fecha,"<a target='_blank' class='btn btn-primary btn-cons' href='mensajes/pdf/"+obj.id+"' class='asd' >Detalles</a>"]
-=======
+/*
                         data = [obj.tipo+' '+obj.value ,obj.apartamento,obj.nombres,obj.apellidos,leido,fecha,"<a class='btn btn-primary btn-cons' target='_blank' href='mensajes/pdf/"+obj.id+"'>PDF</a>"]
->>>>>>> fec1d7fce866ecb23c601393d597f878dc014db2
+*/
                         table.row.add(data).draw();
 
                     });

@@ -106,7 +106,7 @@ class UsuarioController extends \BaseController {
         $user = Auth::user();
 
         $rules = array(
-            'u_nombres' => 'required','u_apellidos'  => 'required'
+            'user_active' => 'required'
         );
         $validator = Validator::make(Input::all(), $rules);
 

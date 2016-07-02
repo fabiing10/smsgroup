@@ -65,7 +65,7 @@ Modal styles
 html {
   height: 100%;
 }
-/* Body Triggers for layout options 
+/* Body Triggers for layout options
 ------------------------------------------------------------------
 */
 body {
@@ -154,7 +154,7 @@ body.dashboard .page-container {
   height: 40px;
   right: 19px;
 }
-/* Header 
+/* Header
 ------------------------------------
 */
 .header {
@@ -222,7 +222,7 @@ body.dashboard .page-container {
 .header .search-link:hover {
   opacity: 1;
 }
-/* Bootstrap navbar 
+/* Bootstrap navbar
 ------------------------------------
 */
 .navbar {
@@ -249,7 +249,7 @@ body.dashboard .page-container {
   border-radius: 0;
   background-color: transparent !important;
 }
-/* Main Menu Sidebar 
+/* Main Menu Sidebar
 ------------------------------------
 */
 .page-sidebar {
@@ -541,7 +541,7 @@ body.dashboard .page-container {
 [data-toggle-pin="sidebar"] > i:before {
   content: "\f10c";
 }
-/* Sidebar icon holder 
+/* Sidebar icon holder
 ------------------------------------
 */
 .icon-thumbnail {
@@ -574,7 +574,7 @@ body.dashboard .page-container {
 .nav-collapse.collapse {
   height: 100%  !important;
 }
-/* Quick View 
+/* Quick View
 ------------------------------------
 */
 .quickview-wrapper {
@@ -840,7 +840,7 @@ body.dashboard .page-container {
 .page-sidebar ~ .page-container {
   padding-left: 70px;
 }
-/* Page Container 
+/* Page Container
 ------------------------------------
 */
 .page-container {
@@ -941,7 +941,7 @@ body.dashboard .page-container {
   font-weight: 300;
   text-shadow: none;
 }
-/* Overlay Search 
+/* Overlay Search
 ------------------------------------
 */
 .overlay {
@@ -1021,7 +1021,7 @@ body.dashboard .page-container {
 .jumbotron h1 {
   font-size: 44px;
 }
-/* Pages Image Icon Sent - Pixel Perfect 
+/* Pages Image Icon Sent - Pixel Perfect
 ------------------------------------
 */
 .icon-set {
@@ -1779,7 +1779,7 @@ body {
   -webkit-font-feature-settings: "kern" 1;
   -moz-font-feature-settings: "kern" 1;
 }
-/* Headings 
+/* Headings
 ------------------------------------
 */
 h1,
@@ -1953,7 +1953,7 @@ hr.double {
 hr.dotted {
   border-style: dotted none none;
 }
-/* Font Sizes 
+/* Font Sizes
 ------------------------------------
 */
 .small-text {
@@ -1980,7 +1980,7 @@ hr.dotted {
 .light {
   font-weight: 300 !important;
 }
-/* Misc 
+/* Misc
 ------------------------------------
 */
 .logo {
@@ -2029,7 +2029,7 @@ hr.dotted {
 ------------------------------------
 */
 .bg-primary {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .bg-primary-dark {
   background-color: #584b8d;
@@ -2043,7 +2043,7 @@ hr.dotted {
 .bg-primary-lighter {
   background-color: #e2deef;
 }
-/* Complete 
+/* Complete
 ------------------------------------
 */
 .bg-complete {
@@ -2061,7 +2061,7 @@ hr.dotted {
 .bg-complete-lighter {
   background-color: #daeffd;
 }
-/* Success 
+/* Success
 ------------------------------------
 */
 .bg-success {
@@ -2097,7 +2097,7 @@ hr.dotted {
 .bg-info-lighter {
   background-color: #d8dadc;
 }
-/* Danger 
+/* Danger
 ------------------------------------
 */
 .bg-danger {
@@ -2136,7 +2136,7 @@ hr.dotted {
 /* More Color Options
 ------------------------------------
 */
-/* Menu 
+/* Menu
 ------------------------------------
 */
 .bg-menu-dark {
@@ -2206,7 +2206,7 @@ hr.dotted {
   color: #f55753 !important;
 }
 .text-primary {
-  color: #1E3963 !important;
+  color: #464646 !important;
 }
 /* Text Aligngments
 ------------------------------------
@@ -2398,7 +2398,7 @@ hr.dotted {
     line-height: 17px;
   }
 }
-/* For Windows : Fixes 
+/* For Windows : Fixes
 ------------------------------------
 */
 .windows body,
@@ -2518,8 +2518,8 @@ Alternate buttons
 .btn-primary,
 .btn-primary:focus {
   color: #ffffff;
-  background-color: #1E3963;
-  border-color: #1E3963;
+  background-color: #464646;
+  border-color: #464646;
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -2557,11 +2557,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #1E3963;
-  border-color: #1E3963;
+  background-color: #464646;
+  border-color: #464646;
 }
 .btn-primary .badge {
-  color: #1E3963;
+  color: #464646;
   background-color: #ffffff;
 }
 .btn-success,
@@ -2927,7 +2927,7 @@ Rounded buttons
   height: 42px;
 }
 .dropdown-default.open > .btn-primary + .dropdown-menu:after {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .dropdown-default.open > .btn-success + .dropdown-menu:after {
   background-color: #10cfbd;
@@ -3633,7 +3633,7 @@ body.menu-pin > .pgn-wrapper[data-position="bottom"] {
 .pgn .alert {
   margin: 0;
 }
-/* Simple 
+/* Simple
 ------------------------------------
 */
 .pgn-simple .alert {
@@ -3645,7 +3645,7 @@ body.menu-pin > .pgn-wrapper[data-position="bottom"] {
   max-height: 250px;
   overflow: hidden;
 }
-/* Bar 
+/* Bar
 ------------------------------------
 */
 .pgn-bar {
@@ -3707,7 +3707,7 @@ body.menu-pin > .pgn-wrapper[data-position="bottom"] {
     -webkit-transform: translateY(0);
   }
 }
-/* Circle 
+/* Circle
 ------------------------------------
 */
 .pgn-circle .alert {
@@ -3807,7 +3807,7 @@ body.menu-pin > .pgn-wrapper[data-position="bottom"] {
     width: 300px;
   }
 }
-/* Flip 
+/* Flip
 ------------------------------------
 */
 .pgn-wrapper[data-position^='top-'] .pgn-flip {
@@ -4050,7 +4050,7 @@ body > .pgn-wrapper {
 ------------------------------------
 */
 .progress-bar-primary {
-  background-color: #1E3963;
+  background-color: #464646;
   background-image: none;
 }
 .progress-bar-complete {
@@ -4109,7 +4109,7 @@ body > .pgn-wrapper {
 .progress-striped .bar-info {
   background-color: #3b4752;
 }
-/* Circular Progress : indeterminate 
+/* Circular Progress : indeterminate
 ------------------------------------
 */
 .progress-circle-indeterminate {
@@ -4137,7 +4137,7 @@ body > .pgn-wrapper {
 .progress-circle-indeterminate.progress-circle-complete {
   background-image: url('../img/progress/progress-circle-complete.svg');
 }
-/* Circular Progress 
+/* Circular Progress
 ------------------------------------
 */
 .progress-circle {
@@ -4158,7 +4158,7 @@ body > .pgn-wrapper {
   border-color: #3b4752;
 }
 .progress-circle.progress-circle-primary .pie .half-circle {
-  border-color: #1E3963;
+  border-color: #464646;
 }
 .progress-circle.progress-circle-success .pie .half-circle {
   border-color: #10cfbd;
@@ -4485,7 +4485,7 @@ body > .pgn-wrapper {
 .nav-tabs.nav-tabs-right ~ .tab-content {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-/* Tabs : Simple 
+/* Tabs : Simple
 ------------------------------------
 */
 .nav-tabs-simple {
@@ -4513,7 +4513,7 @@ body > .pgn-wrapper {
   z-index: 125;
 }
 .nav-tabs-primary.nav-tabs-simple > li:after {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .nav-tabs-success.nav-tabs-simple > li:after {
   background-color: #10cfbd;
@@ -4672,7 +4672,7 @@ body > .pgn-wrapper {
     font-size: 0.6em;
   }
 }
-/* Tabs : Fill-up 
+/* Tabs : Fill-up
 ------------------------------------
 */
 .nav-tabs-fillup {
@@ -4713,8 +4713,8 @@ body > .pgn-wrapper {
   z-index: -1;
 }
 .nav-tabs-primary.nav-tabs-fillup > li > a:after {
-  background: none repeat scroll 0 0 #1E3963;
-  border: 1px solid #1E3963;
+  background: none repeat scroll 0 0 #464646;
+  border: 1px solid #464646;
 }
 .nav-tabs-success.nav-tabs-fillup > li > a:after {
   background: none repeat scroll 0 0 #10cfbd;
@@ -5010,29 +5010,29 @@ https://github.com/IonDen/ion.rangeSlider
   background-color: #10cfbd;
 }
 .irs-wrapper.primary .irs-diapason {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .irs-wrapper.primary .irs-from,
 .irs-wrapper.primary .irs-to,
 .irs-wrapper.primary .irs-single {
-  background: #1E3963;
+  background: #464646;
 }
 .irs-wrapper.primary .irs-slider.from:before {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .irs-wrapper.primary .irs-slider.to:before {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .irs-wrapper.primary .irs-slider.single:before {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .irs-wrapper.primary .irs-from:after,
 .irs-wrapper.primary .irs-to:after,
 .irs-wrapper.primary .irs-single:after {
-  border-top-color: #1E3963;
+  border-top-color: #464646;
 }
 .irs-wrapper.primary .irs-bar {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .irs-wrapper.warning .irs-diapason {
   background-color: #f8d053;
@@ -5134,7 +5134,7 @@ http://refreshless.com/nouislider/
   background-color: #3b4752;
 }
 .noUi-target.bg-primary .noUi-connect {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .noUi-target.noUi-connect {
   box-shadow: none;
@@ -5454,7 +5454,7 @@ fieldset[disabled] .form-control {
   font-size: 18px;
   line-height: 22px;
 }
-/* Checkboxes and Radio buttons 
+/* Checkboxes and Radio buttons
 --------------------------------------------------
 */
 .radio,
@@ -5506,7 +5506,7 @@ fieldset[disabled] .form-control {
   border-color: #10cfbd;
 }
 .radio.radio-primary input[type=radio]:checked + label:before {
-  border-color: #1E3963;
+  border-color: #464646;
 }
 .radio.radio-info input[type=radio]:checked + label:before {
   border-color: #3b4752;
@@ -5590,7 +5590,7 @@ fieldset[disabled] .form-control {
   border-color: #10cfbd;
 }
 .checkbox.check-primary input[type=checkbox]:checked + label:before {
-  border-color: #1E3963;
+  border-color: #464646;
 }
 .checkbox.check-complete input[type=checkbox]:checked + label:before {
   border-color: #48b0f7;
@@ -5729,7 +5729,7 @@ fieldset[disabled] .form-control {
     width: 100%;
   }
 }
-/* Form Groups 
+/* Form Groups
 --------------------------------------------------
 */
 .form-group {
@@ -6066,12 +6066,12 @@ fieldset[disabled] .form-control {
   top: 1px;
 }
 .input-group-addon.primary {
-  background-color: #1E3963;
-  border: 1px solid #1E3963;
+  background-color: #464646;
+  border: 1px solid #464646;
   color: #ffffff;
 }
 .input-group-addon.primary .arrow {
-  color: #1E3963;
+  color: #464646;
 }
 .input-group-addon.success {
   background-color: #0090d9;
@@ -6145,13 +6145,13 @@ https://github.com/eternicode/bootstrap-datepicker
 }
 .datepicker thead tr .next,
 .datepicker thead tr .prev {
-  color: #1E3963;
+  color: #464646;
   content: '';
   font-size: 0px;
 }
 .datepicker thead tr .next:before,
 .datepicker thead tr .prev:before {
-  color: #1E3963;
+  color: #464646;
   font-family: 'FontAwesome';
   font-size: 10px;
 }
@@ -6163,7 +6163,7 @@ https://github.com/eternicode/bootstrap-datepicker
 }
 .datepicker thead tr .dow {
   font-family: 'Montserrat';
-  color: #1E3963;
+  color: #464646;
   text-transform: uppercase;
   font-size: 11px;
 }
@@ -6186,7 +6186,7 @@ https://github.com/eternicode/bootstrap-datepicker
   background: #f0f0f0;
 }
 .datepicker table tr td.active {
-  background-color: #1E3963 !important;
+  background-color: #464646 !important;
 }
 .datepicker table tr td.active,
 .datepicker table tr td.active:hover,
@@ -6211,7 +6211,7 @@ https://github.com/eternicode/bootstrap-datepicker
   line-height: 42px;
 }
 .datepicker table tr td span.active {
-  background-color: #1E3963 !important;
+  background-color: #464646 !important;
 }
 .datepicker table tr td span.active,
 .datepicker table tr td span.active:hover,
@@ -6235,7 +6235,7 @@ https://github.com/eternicode/bootstrap-datepicker
   text-shadow: none;
   border: 0;
 }
-/* Timepicker 
+/* Timepicker
 https://github.com/m3wolf/bootstrap3-timepicker
 */
 .bootstrap-timepicker-widget table td a i {
@@ -6262,7 +6262,7 @@ http://www.dangrossman.info/
 .daterangepicker .calendar .prev,
 .daterangepicker .calendar .next,
 .daterangepicker .calendar th {
-  color: #1E3963;
+  color: #464646;
   text-transform: uppercase;
   font-size: 11px;
 }
@@ -6272,8 +6272,8 @@ http://www.dangrossman.info/
 }
 .daterangepicker td.active,
 .daterangepicker td.active:hover {
-  background-color: #1E3963;
-  border-color: #1E3963;
+  background-color: #464646;
+  border-color: #464646;
 }
 /* Select2
 http://ivaynberg.github.io/select2/
@@ -6703,7 +6703,7 @@ https://github.com/HackerWins/summernote
 }
 .summernote-wrapper .note-popover .popover .popover-content .dropdown-menu li a i,
 .summernote-wrapper .note-toolbar .dropdown-menu li a i {
-  color: #1E3963;
+  color: #464646;
 }
 input,
 input:focus {
@@ -7056,7 +7056,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
 /*------------------------------------------------------------------
 [16. Tables and Datatables]
 */
-/* Generic Tables 
+/* Generic Tables
 ------------------------------------
 */
 .table {
@@ -7187,7 +7187,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
 .fht-table {
   margin-bottom: 0 !important;
 }
-/* Data-tables 
+/* Data-tables
 ------------------------------------
 */
 .table.dataTable.no-footer {
@@ -7423,7 +7423,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
 .line-chart[data-line-color="primary"] .nvd3 line.nv-guideline,
 .line-chart[data-line-color="primary"] .nvd3 .nv-groups path.nv-line,
 .line-chart[data-line-color="primary"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
-  stroke: #1E3963;
+  stroke: #464646;
 }
 .line-chart[data-line-color="info"] .nvd3 line.nv-guideline,
 .line-chart[data-line-color="info"] .nvd3 .nv-groups path.nv-line,
@@ -7471,7 +7471,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
   fill: #48b0f7;
 }
 .line-chart[data-area-color="primary"] .nvd3 .nv-groups path.nv-area {
-  fill: #1E3963;
+  fill: #464646;
 }
 .line-chart[data-area-color="warning"] .nvd3 .nv-groups path.nv-area {
   fill: #f8d053;
@@ -7501,7 +7501,7 @@ div.cs-skin-slide .cs-options ul li.cs-selected span {
   fill: #48b0f7;
 }
 .line-chart[data-point-color="primary"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
-  fill: #1E3963;
+  fill: #464646;
 }
 .line-chart[data-point-color="warning"] .nvd3.nv-line .nvd3.nv-scatter .nv-groups .nv-point {
   fill: #f8d053;
@@ -7787,7 +7787,7 @@ input.list-view-search {
   height: 100%;
   width: 100%;
 }
-/* Cover 
+/* Cover
 ------------------------------------
 */
 .social-wrapper .social .jumbotron {
@@ -7830,7 +7830,7 @@ input.list-view-search {
   min-width: 100%;
   min-height: 100%;
 }
-/* Feed 
+/* Feed
 ------------------------------------
 */
 .social-user-profile {
@@ -7857,7 +7857,7 @@ input.list-view-search {
 .social-wrapper .social .feed > .day:hover > .timeline:after {
   background: #48b0f7;
 }
-/* Cards 
+/* Cards
 ------------------------------------
 */
 .card {
@@ -8196,7 +8196,7 @@ input.list-view-search {
 .toggle-email-sidebar {
   display: none;
 }
-/* Email Components 
+/* Email Components
 --------------------------------------------------
 */
 .email-wrapper {
@@ -8510,7 +8510,7 @@ input.list-view-search {
   margin-left: -30px;
   margin-right: -30px;
 }
-/* Email App Top Header 
+/* Email App Top Header
 --------------------------------------------------
 */
 .header-wrapper-email {
@@ -8522,7 +8522,7 @@ input.list-view-search {
 .header-wrapper-email .btn:hover {
   text-decoration: none;
 }
-/* Responsive Handler : Email App 
+/* Responsive Handler : Email App
 --------------------------------------------------
 */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
@@ -9105,7 +9105,7 @@ Responsive Util
 */
 .login-wrapper {
   height: 100%;
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .login-wrapper > * {
   height: 100%;
@@ -9204,7 +9204,7 @@ display: -webkit-box;
   position: absolute;
   top: 50%;
 }
-/* Responsive Handlers : Lockscreen 
+/* Responsive Handlers : Lockscreen
 ------------------------------------
 */
 @media (max-width: 767px) {
@@ -9239,7 +9239,7 @@ display: -webkit-box;
   Adapted from Vertical Timeline by Sebastiano Guerriero
   http://codyhouse.co/gem/vertical-timeline/
 */
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -9266,9 +9266,9 @@ Modules - reusable parts of our design
   background-color: #fff;
   z-index: 10;
 }
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 .timeline {
@@ -9349,7 +9349,7 @@ Main components
   top: 50%;
 }
 .timeline-point.primary {
-  background-color: #1E3963;
+  background-color: #464646;
 }
 .timeline-point.complete {
   background-color: #48b0f7;
@@ -9951,7 +9951,7 @@ Main components
   }
 }
 /*------------------------------------------------------------------
-[26. Vector Map : Mapplic Plugin] 
+[26. Vector Map : Mapplic Plugin]
 */
 .mapplic-container {
   width: 100%;
@@ -10431,7 +10431,7 @@ Main components
   text-align: right;
   margin-right: 10px;
 }
-/* Thumbnail for icons and profile pics 
+/* Thumbnail for icons and profile pics
 ------------------------------------
 */
 .thumbnail-wrapper {
@@ -10572,14 +10572,14 @@ Main components
   background: transparent;
   border: none;
 }
-/* Scroll 
+/* Scroll
 ------------------------------------
 */
 .scrollable {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 }
-/* Overides 
+/* Overides
 ------------------------------------
 */
 .no-padding {
@@ -10662,7 +10662,7 @@ Main components
 .scroll-x-hidden {
   overflow-x: hidden !important;
 }
-/* Generic Padding Helpers 
+/* Generic Padding Helpers
 ------------------------------------
 */
 .p-t-5 {
@@ -11238,7 +11238,7 @@ Main components
 .b-blank {
   border-color: #000;
 }
-/* Border Helpers 
+/* Border Helpers
 ------------------------------------
 */
 .b-a,
@@ -11283,10 +11283,10 @@ Main components
   border-color: #fff;
 }
 .b-primary {
-  border-color: #1E3963;
+  border-color: #464646;
 }
 .b-complete {
-  border-color: #1E3963;
+  border-color: #464646;
 }
 .b-success {
   border-color: #10cfbd;
@@ -11503,7 +11503,7 @@ Main components
 .col-bottom {
   vertical-align: bottom;
 }
-/* columns of same height styles 
+/* columns of same height styles
 ------------------------------------
 */
 .container-xs-height {
@@ -11745,7 +11745,7 @@ Main components
 .previewer {
   height: 35px;
 }
-/* Demo Widths For GIF Animations 
+/* Demo Widths For GIF Animations
 ------------------------------------
 */
 .demo-bg-hinted {

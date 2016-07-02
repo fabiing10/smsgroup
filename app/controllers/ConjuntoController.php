@@ -109,6 +109,38 @@ class ConjuntoController extends \BaseController {
             $conjunto->map_longitud = Input::get('longitud');
             $conjunto->save();
 
+
+						//Create Roles as a Interior
+
+						$zona = new Zona();
+            $zona->conjunto_id = $conjunto->id;
+            $zona->tipo = 'Contador';
+            $zona->value = 'Contador';
+            $zona->save();
+
+						$apartamento = new Apartamento();
+            $apartamento->apartamento  = 'Contador';
+            $apartamento->descripcion  = 'Contador';
+            $apartamento->zona_id = $zona->id;
+            $apartamento->save();
+
+
+
+						$zona2 = new Zona();
+            $zona2->conjunto_id = $conjunto->id;
+            $zona2->tipo = 'Revisor_Fiscal';
+            $zona2->value = 'Revisor Fiscal';
+            $zona2->save();
+
+						$apartamento2 = new Apartamento();
+            $apartamento2->apartamento  = 'Revisor Fiscal';
+            $apartamento2->descripcion  = 'Revisor Fiscal';
+            $apartamento2->zona_id = $zona2->id;
+            $apartamento2->save();
+
+
+
+
             // redirect
             Session::flash('message', 'Successfully created nerd!');
             return Redirect::to('admin/conjuntos');

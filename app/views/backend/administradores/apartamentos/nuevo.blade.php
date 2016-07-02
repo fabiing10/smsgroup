@@ -29,7 +29,11 @@
                                 <optgroup label="Zonas Disponibles">
 
                                     @foreach($zonas as $zona)
-                                        <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->tipo }} - {{ $zona->value }}</option>
+                                        @if($zona->tipo == "Contador" || $zona->tipo == "Revisor_Fiscal")
+                                          <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->value }}</option>
+                                        @else
+                                          <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->tipo }} - {{ $zona->value }}</option>
+                                        @endif
                                     @endforeach
                                 </optgroup>
                             </select>
@@ -65,4 +69,3 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-    

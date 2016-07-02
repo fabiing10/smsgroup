@@ -168,12 +168,12 @@
         "target-dir": "Symfony/Component/HttpFoundation",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/HttpFoundation.git",
+            "url": "https://github.com/symfony/http-foundation.git",
             "reference": "8e42d9536b5df05f37a9aae5761d3ee69ab95ddf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/8e42d9536b5df05f37a9aae5761d3ee69ab95ddf",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/8e42d9536b5df05f37a9aae5761d3ee69ab95ddf",
             "reference": "8e42d9536b5df05f37a9aae5761d3ee69ab95ddf",
             "shasum": ""
         },
@@ -223,12 +223,12 @@
         "target-dir": "Symfony/Component/Debug",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Debug.git",
+            "url": "https://github.com/symfony/debug.git",
             "reference": "17f9a22782f51ca18724b6713671cf0148b86043"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Debug/zipball/17f9a22782f51ca18724b6713671cf0148b86043",
+            "url": "https://api.github.com/repos/symfony/debug/zipball/17f9a22782f51ca18724b6713671cf0148b86043",
             "reference": "17f9a22782f51ca18724b6713671cf0148b86043",
             "shasum": ""
         },
@@ -280,12 +280,12 @@
         "target-dir": "Symfony/Component/HttpKernel",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/HttpKernel.git",
+            "url": "https://github.com/symfony/http-kernel.git",
             "reference": "84b1bd5433bc78cf78c19808abdd155edb4f1937"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/84b1bd5433bc78cf78c19808abdd155edb4f1937",
+            "url": "https://api.github.com/repos/symfony/http-kernel/zipball/84b1bd5433bc78cf78c19808abdd155edb4f1937",
             "reference": "84b1bd5433bc78cf78c19808abdd155edb4f1937",
             "shasum": ""
         },
@@ -354,12 +354,12 @@
         "target-dir": "Symfony/Component/Routing",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Routing.git",
+            "url": "https://github.com/symfony/routing.git",
             "reference": "0bd97a27cfd1ad2699ad045de2a744888318a228"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Routing/zipball/0bd97a27cfd1ad2699ad045de2a744888318a228",
+            "url": "https://api.github.com/repos/symfony/routing/zipball/0bd97a27cfd1ad2699ad045de2a744888318a228",
             "reference": "0bd97a27cfd1ad2699ad045de2a744888318a228",
             "shasum": ""
         },
@@ -521,12 +521,12 @@
         "target-dir": "Symfony/Component/DomCrawler",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/DomCrawler.git",
+            "url": "https://github.com/symfony/dom-crawler.git",
             "reference": "eea2c3d5c16f6319d0122153594fdb66dfba1ca1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/DomCrawler/zipball/eea2c3d5c16f6319d0122153594fdb66dfba1ca1",
+            "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/eea2c3d5c16f6319d0122153594fdb66dfba1ca1",
             "reference": "eea2c3d5c16f6319d0122153594fdb66dfba1ca1",
             "shasum": ""
         },
@@ -576,12 +576,12 @@
         "target-dir": "Symfony/Component/CssSelector",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/CssSelector.git",
+            "url": "https://github.com/symfony/css-selector.git",
             "reference": "4e9ddc09c13475fb1a52fb578a8899c8303966c5"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/CssSelector/zipball/4e9ddc09c13475fb1a52fb578a8899c8303966c5",
+            "url": "https://api.github.com/repos/symfony/css-selector/zipball/4e9ddc09c13475fb1a52fb578a8899c8303966c5",
             "reference": "4e9ddc09c13475fb1a52fb578a8899c8303966c5",
             "shasum": ""
         },
@@ -629,12 +629,12 @@
         "target-dir": "Symfony/Component/Console",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/Console.git",
+            "url": "https://github.com/symfony/console.git",
             "reference": "39dd1c85ffdfc3c5fb008019dd027af05f64ec36"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Console/zipball/39dd1c85ffdfc3c5fb008019dd027af05f64ec36",
+            "url": "https://api.github.com/repos/symfony/console/zipball/39dd1c85ffdfc3c5fb008019dd027af05f64ec36",
             "reference": "39dd1c85ffdfc3c5fb008019dd027af05f64ec36",
             "shasum": ""
         },
@@ -684,12 +684,12 @@
         "target-dir": "Symfony/Component/BrowserKit",
         "source": {
             "type": "git",
-            "url": "https://github.com/symfony/BrowserKit.git",
+            "url": "https://github.com/symfony/browser-kit.git",
             "reference": "027accb7a418046887680764bfbeeebc84ecf5a6"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/BrowserKit/zipball/027accb7a418046887680764bfbeeebc84ecf5a6",
+            "url": "https://api.github.com/repos/symfony/browser-kit/zipball/027accb7a418046887680764bfbeeebc84ecf5a6",
             "reference": "027accb7a418046887680764bfbeeebc84ecf5a6",
             "shasum": ""
         },
@@ -733,111 +733,6 @@
         ],
         "description": "Symfony BrowserKit Component",
         "homepage": "http://symfony.com"
-    },
-    {
-        "name": "swiftmailer/swiftmailer",
-        "version": "v5.4.0",
-        "version_normalized": "5.4.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/swiftmailer/swiftmailer.git",
-            "reference": "31454f258f10329ae7c48763eb898a75c39e0a9f"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/31454f258f10329ae7c48763eb898a75c39e0a9f",
-            "reference": "31454f258f10329ae7c48763eb898a75c39e0a9f",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.3"
-        },
-        "require-dev": {
-            "mockery/mockery": "~0.9.1"
-        },
-        "time": "2015-03-14 06:06:39",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "5.4-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "files": [
-                "lib/swift_required.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Chris Corbyn"
-            },
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            }
-        ],
-        "description": "Swiftmailer, free feature-rich PHP mailer",
-        "homepage": "http://swiftmailer.org",
-        "keywords": [
-            "mail",
-            "mailer"
-        ]
-    },
-    {
-        "name": "stack/builder",
-        "version": "v1.0.3",
-        "version_normalized": "1.0.3.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/stackphp/builder.git",
-            "reference": "c1f8a4693b55c563405024f708a76ef576c3b276"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/stackphp/builder/zipball/c1f8a4693b55c563405024f708a76ef576c3b276",
-            "reference": "c1f8a4693b55c563405024f708a76ef576c3b276",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "symfony/http-foundation": "~2.1",
-            "symfony/http-kernel": "~2.1"
-        },
-        "require-dev": {
-            "silex/silex": "~1.0"
-        },
-        "time": "2014-11-23 20:37:11",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.0-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Stack": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Igor Wiedler",
-                "email": "igor@wiedler.ch"
-            }
-        ],
-        "description": "Builder for stack middlewares based on HttpKernelInterface.",
-        "keywords": [
-            "stack"
-        ]
     },
     {
         "name": "predis/predis",
@@ -992,59 +887,6 @@
         ]
     },
     {
-        "name": "patchwork/utf8",
-        "version": "v1.1.29",
-        "version_normalized": "1.1.29.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/tchwork/utf8.git",
-            "reference": "65b19607048351f767a034d4cc709db8b136d2c5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/tchwork/utf8/zipball/65b19607048351f767a034d4cc709db8b136d2c5",
-            "reference": "65b19607048351f767a034d4cc709db8b136d2c5",
-            "shasum": ""
-        },
-        "require": {
-            "lib-pcre": ">=7.3",
-            "php": ">=5.3.0"
-        },
-        "suggest": {
-            "ext-iconv": "Use iconv for best performance",
-            "ext-intl": "Use Intl for best performance",
-            "ext-mbstring": "Use Mbstring for best performance"
-        },
-        "time": "2015-04-26 09:48:22",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-0": {
-                "Patchwork": "class/",
-                "Normalizer": "class/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "(Apache-2.0 or GPL-2.0)"
-        ],
-        "authors": [
-            {
-                "name": "Nicolas Grekas",
-                "email": "p@tchwork.com"
-            }
-        ],
-        "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
-        "homepage": "https://github.com/tchwork/utf8",
-        "keywords": [
-            "grapheme",
-            "i18n",
-            "unicode",
-            "utf-8",
-            "utf8"
-        ]
-    },
-    {
         "name": "nesbot/carbon",
         "version": "1.17.0",
         "version_normalized": "1.17.0.0",
@@ -1090,81 +932,6 @@
             "date",
             "datetime",
             "time"
-        ]
-    },
-    {
-        "name": "monolog/monolog",
-        "version": "1.13.1",
-        "version_normalized": "1.13.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/Seldaek/monolog.git",
-            "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-            "reference": "c31a2c4e8db5da8b46c74cf275d7f109c0f249ac",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0",
-            "psr/log": "~1.0"
-        },
-        "provide": {
-            "psr/log-implementation": "1.0.0"
-        },
-        "require-dev": {
-            "aws/aws-sdk-php": "~2.4, >2.4.8",
-            "doctrine/couchdb": "~1.0@dev",
-            "graylog2/gelf-php": "~1.0",
-            "phpunit/phpunit": "~4.0",
-            "raven/raven": "~0.5",
-            "ruflin/elastica": "0.90.*",
-            "swiftmailer/swiftmailer": "~5.3",
-            "videlalvaro/php-amqplib": "~2.4"
-        },
-        "suggest": {
-            "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
-            "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
-            "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
-            "ext-mongo": "Allow sending log messages to a MongoDB server",
-            "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
-            "raven/raven": "Allow sending log messages to a Sentry server",
-            "rollbar/rollbar": "Allow sending log messages to Rollbar",
-            "ruflin/elastica": "Allow sending log messages to an Elastic Search server",
-            "videlalvaro/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib"
-        },
-        "time": "2015-03-09 09:58:04",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "1.13.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Monolog\\": "src/Monolog"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Jordi Boggiano",
-                "email": "j.boggiano@seld.be",
-                "homepage": "http://seld.be"
-            }
-        ],
-        "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
-        "homepage": "http://github.com/Seldaek/monolog",
-        "keywords": [
-            "log",
-            "logging",
-            "psr-3"
         ]
     },
     {
@@ -1564,117 +1331,6 @@
         "notification-url": "https://packagist.org/downloads/"
     },
     {
-        "name": "symfony/event-dispatcher",
-        "version": "v2.7.0",
-        "version_normalized": "2.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/EventDispatcher.git",
-            "reference": "687039686d0e923429ba6e958d0baa920cd5d458"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/687039686d0e923429ba6e958d0baa920cd5d458",
-            "reference": "687039686d0e923429ba6e958d0baa920cd5d458",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "psr/log": "~1.0",
-            "symfony/config": "~2.0,>=2.0.5",
-            "symfony/dependency-injection": "~2.6",
-            "symfony/expression-language": "~2.6",
-            "symfony/phpunit-bridge": "~2.7",
-            "symfony/stopwatch": "~2.3"
-        },
-        "suggest": {
-            "symfony/dependency-injection": "",
-            "symfony/http-kernel": ""
-        },
-        "time": "2015-05-02 15:21:08",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.7-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\EventDispatcher\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony EventDispatcher Component",
-        "homepage": "https://symfony.com"
-    },
-    {
-        "name": "symfony/filesystem",
-        "version": "v2.7.0",
-        "version_normalized": "2.7.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/symfony/Filesystem.git",
-            "reference": "ae4551fd6d4d4f51f2e7390fbc902fbd67f3b7ba"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/symfony/Filesystem/zipball/ae4551fd6d4d4f51f2e7390fbc902fbd67f3b7ba",
-            "reference": "ae4551fd6d4d4f51f2e7390fbc902fbd67f3b7ba",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.9"
-        },
-        "require-dev": {
-            "symfony/phpunit-bridge": "~2.7"
-        },
-        "time": "2015-05-15 13:33:16",
-        "type": "library",
-        "extra": {
-            "branch-alias": {
-                "dev-master": "2.7-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Symfony\\Component\\Filesystem\\": ""
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "MIT"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Potencier",
-                "email": "fabien@symfony.com"
-            },
-            {
-                "name": "Symfony Community",
-                "homepage": "https://symfony.com/contributors"
-            }
-        ],
-        "description": "Symfony Filesystem Component",
-        "homepage": "https://symfony.com"
-    },
-    {
         "name": "thujohn/pdf",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -1756,49 +1412,6 @@
         "homepage": "https://github.com/PhenX/php-font-lib"
     },
     {
-        "name": "dompdf/dompdf",
-        "version": "v0.6.1",
-        "version_normalized": "0.6.1.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/dompdf/dompdf.git",
-            "reference": "cf7d8a0a27270418850cc7d7ea532159e5eeb3eb"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/dompdf/dompdf/zipball/cf7d8a0a27270418850cc7d7ea532159e5eeb3eb",
-            "reference": "cf7d8a0a27270418850cc7d7ea532159e5eeb3eb",
-            "shasum": ""
-        },
-        "require": {
-            "phenx/php-font-lib": "0.2.*"
-        },
-        "time": "2014-03-11 01:59:52",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "classmap": [
-                "include/"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "LGPL"
-        ],
-        "authors": [
-            {
-                "name": "Fabien Ménager",
-                "email": "fabien.menager@gmail.com"
-            },
-            {
-                "name": "Brian Sweeney",
-                "email": "eclecticgeek@gmail.com"
-            }
-        ],
-        "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
-        "homepage": "https://github.com/dompdf/dompdf"
-    },
-    {
         "name": "barryvdh/laravel-dompdf",
         "version": "v0.4.6",
         "version_normalized": "0.4.6.0",
@@ -1847,5 +1460,400 @@
             "laravel",
             "pdf"
         ]
+    },
+    {
+        "name": "monolog/monolog",
+        "version": "1.19.0",
+        "version_normalized": "1.19.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Seldaek/monolog.git",
+            "reference": "5f56ed5212dc509c8dc8caeba2715732abb32dbf"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5f56ed5212dc509c8dc8caeba2715732abb32dbf",
+            "reference": "5f56ed5212dc509c8dc8caeba2715732abb32dbf",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "psr/log": "~1.0"
+        },
+        "provide": {
+            "psr/log-implementation": "1.0.0"
+        },
+        "require-dev": {
+            "aws/aws-sdk-php": "^2.4.9",
+            "doctrine/couchdb": "~1.0@dev",
+            "graylog2/gelf-php": "~1.0",
+            "jakub-onderka/php-parallel-lint": "0.9",
+            "php-amqplib/php-amqplib": "~2.4",
+            "php-console/php-console": "^3.1.3",
+            "phpunit/phpunit": "~4.5",
+            "phpunit/phpunit-mock-objects": "2.3.0",
+            "raven/raven": "^0.13",
+            "ruflin/elastica": ">=0.90 <3.0",
+            "swiftmailer/swiftmailer": "~5.3"
+        },
+        "suggest": {
+            "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+            "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+            "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+            "ext-mongo": "Allow sending log messages to a MongoDB server",
+            "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+            "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
+            "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+            "php-console/php-console": "Allow sending log messages to Google Chrome",
+            "raven/raven": "Allow sending log messages to a Sentry server",
+            "rollbar/rollbar": "Allow sending log messages to Rollbar",
+            "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+        },
+        "time": "2016-04-12 18:29:35",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Monolog\\": "src/Monolog"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jordi Boggiano",
+                "email": "j.boggiano@seld.be",
+                "homepage": "http://seld.be"
+            }
+        ],
+        "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+        "homepage": "http://github.com/Seldaek/monolog",
+        "keywords": [
+            "log",
+            "logging",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "patchwork/utf8",
+        "version": "v1.1.31",
+        "version_normalized": "1.1.31.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tchwork/utf8.git",
+            "reference": "84da29ef77c422d83126534cb5bb03ba6e20f319"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tchwork/utf8/zipball/84da29ef77c422d83126534cb5bb03ba6e20f319",
+            "reference": "84da29ef77c422d83126534cb5bb03ba6e20f319",
+            "shasum": ""
+        },
+        "require": {
+            "lib-pcre": ">=7.3",
+            "php": ">=5.3.0"
+        },
+        "suggest": {
+            "ext-iconv": "Use iconv for best performance",
+            "ext-intl": "Use Intl for best performance",
+            "ext-mbstring": "Use Mbstring for best performance"
+        },
+        "time": "2015-12-15 15:29:47",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Patchwork": "class/",
+                "Normalizer": "class/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "(Apache-2.0 or GPL-2.0)"
+        ],
+        "authors": [
+            {
+                "name": "Nicolas Grekas",
+                "email": "p@tchwork.com"
+            }
+        ],
+        "description": "Portable and performant UTF-8, Unicode and Grapheme Clusters for PHP",
+        "homepage": "https://github.com/tchwork/utf8",
+        "keywords": [
+            "grapheme",
+            "i18n",
+            "unicode",
+            "utf-8",
+            "utf8"
+        ]
+    },
+    {
+        "name": "symfony/event-dispatcher",
+        "version": "v2.8.8",
+        "version_normalized": "2.8.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/event-dispatcher.git",
+            "reference": "b180b70439dca70049b6b9b7e21d75e6e5d7aca9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/b180b70439dca70049b6b9b7e21d75e6e5d7aca9",
+            "reference": "b180b70439dca70049b6b9b7e21d75e6e5d7aca9",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "require-dev": {
+            "psr/log": "~1.0",
+            "symfony/config": "~2.0,>=2.0.5|~3.0.0",
+            "symfony/dependency-injection": "~2.6|~3.0.0",
+            "symfony/expression-language": "~2.6|~3.0.0",
+            "symfony/stopwatch": "~2.3|~3.0.0"
+        },
+        "suggest": {
+            "symfony/dependency-injection": "",
+            "symfony/http-kernel": ""
+        },
+        "time": "2016-06-29 05:29:29",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\EventDispatcher\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony EventDispatcher Component",
+        "homepage": "https://symfony.com"
+    },
+    {
+        "name": "stack/builder",
+        "version": "v1.0.4",
+        "version_normalized": "1.0.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/stackphp/builder.git",
+            "reference": "59fcc9b448a8ce5e338a04c4e2e4aca893e83425"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/stackphp/builder/zipball/59fcc9b448a8ce5e338a04c4e2e4aca893e83425",
+            "reference": "59fcc9b448a8ce5e338a04c4e2e4aca893e83425",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0",
+            "symfony/http-foundation": "~2.1|~3.0",
+            "symfony/http-kernel": "~2.1|~3.0"
+        },
+        "require-dev": {
+            "silex/silex": "~1.0"
+        },
+        "time": "2016-06-02 06:58:42",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Stack": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            }
+        ],
+        "description": "Builder for stack middlewares based on HttpKernelInterface.",
+        "keywords": [
+            "stack"
+        ]
+    },
+    {
+        "name": "swiftmailer/swiftmailer",
+        "version": "v5.4.2",
+        "version_normalized": "5.4.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/swiftmailer/swiftmailer.git",
+            "reference": "d8db871a54619458a805229a057ea2af33c753e8"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/d8db871a54619458a805229a057ea2af33c753e8",
+            "reference": "d8db871a54619458a805229a057ea2af33c753e8",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "mockery/mockery": "~0.9.1,<0.9.4"
+        },
+        "time": "2016-05-01 08:45:47",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "5.4-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "lib/swift_required.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Chris Corbyn"
+            },
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            }
+        ],
+        "description": "Swiftmailer, free feature-rich PHP mailer",
+        "homepage": "http://swiftmailer.org",
+        "keywords": [
+            "email",
+            "mail",
+            "mailer"
+        ]
+    },
+    {
+        "name": "dompdf/dompdf",
+        "version": "v0.6.2",
+        "version_normalized": "0.6.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/dompdf/dompdf.git",
+            "reference": "cc06008f75262510ee135b8cbb14e333a309f651"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/dompdf/dompdf/zipball/cc06008f75262510ee135b8cbb14e333a309f651",
+            "reference": "cc06008f75262510ee135b8cbb14e333a309f651",
+            "shasum": ""
+        },
+        "require": {
+            "phenx/php-font-lib": "0.2.*"
+        },
+        "time": "2015-12-07 04:07:13",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "classmap": [
+                "include/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "LGPL"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Ménager",
+                "email": "fabien.menager@gmail.com"
+            },
+            {
+                "name": "Brian Sweeney",
+                "email": "eclecticgeek@gmail.com"
+            }
+        ],
+        "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+        "homepage": "https://github.com/dompdf/dompdf"
+    },
+    {
+        "name": "symfony/filesystem",
+        "version": "v2.8.8",
+        "version_normalized": "2.8.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/symfony/filesystem.git",
+            "reference": "7258ddd6f987053f21fa43d03430580ba54e6096"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/symfony/filesystem/zipball/7258ddd6f987053f21fa43d03430580ba54e6096",
+            "reference": "7258ddd6f987053f21fa43d03430580ba54e6096",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.9"
+        },
+        "time": "2016-06-29 05:31:50",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.8-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Symfony\\Component\\Filesystem\\": ""
+            },
+            "exclude-from-classmap": [
+                "/Tests/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com"
+            },
+            {
+                "name": "Symfony Community",
+                "homepage": "https://symfony.com/contributors"
+            }
+        ],
+        "description": "Symfony Filesystem Component",
+        "homepage": "https://symfony.com"
     }
 ]
