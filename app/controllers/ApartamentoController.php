@@ -118,7 +118,24 @@ class ApartamentoController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+
+		$apartamento = Crypt::decrypt($id);
+		//Eliminar Usuarios del Apartamento
+		$usuarios = DB::table('usuarios as usuario')
+				->join('usuario_apartamento as u_a', 'usuario.id', '=', 'u_a.usuario_id')
+				->join('apartamentos as apartamento', 'u_a.apartamento_id', '=', 'apartamento.id')
+				->select('usuario.id')
+				->where('apartamento.id', '=', $apartamento)
+				->get();
+
+		foreach($usuarios as $usuario){
+				Usuario::destroy($usuario->id);
+		}
+		//Elimina el apartamentos
+		Apartamento::destroy($apartamento);
+
+		return Redirect::to('admin-conjuntos/conjunto/apartamentos');
+
 	}
 
 

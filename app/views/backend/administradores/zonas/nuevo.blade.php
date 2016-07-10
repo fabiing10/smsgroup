@@ -24,7 +24,7 @@
                                     <option value="Oficina">Oficina</option>
 
                                 </optgroup>
-                    
+
                             </select>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
 
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary  btn-cons">Agregar Unidad</button>
-                    <button type="button" class="btn btn-cons">Cerrar</button>
+                    <button type="button" class="btn btn-cons" onclick="clodeWindows('modal-nueva-zona')">Cerrar</button>
                 </div>
 
                 {{ Form::close() }}

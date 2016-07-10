@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Replace onSearchSubmit() and onKeyEnter() with
     // your logic to perform a search and display results
 
-
+    
 
     //Conjuntos Script JS
     $('#show-modal').click(function() {
@@ -68,5 +68,3 @@ $(document).ready(function() {
 
 
 });
-
-

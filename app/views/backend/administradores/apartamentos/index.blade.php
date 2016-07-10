@@ -92,7 +92,7 @@
 
 
                     <div class="panel-heading">
-                        <div class="panel-title">Pages Default Tables Style
+                        <div class="panel-title">Informacion detallada de los Apartamentos
                         </div>
                         <div class="pull-right" style="width: 50%;">
                             <div class="col-xs-6">
@@ -130,10 +130,8 @@
                                     <td class="v-align-middle"> Usuarios</td>
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success actualizar-conjunto" data-value="{{Crypt::encrypt($apartamento->id)}}"><i class="fa fa-pencil"></i>
-                                            </button>
-                                            <button type="button" class="btn btn-danger eliminar-conjunto"  data-value="{{Crypt::encrypt($apartamento->id)}}"><i class="fa fa-trash-o"></i>
-                                            </button>
+                                            <a href="apartamentos/eliminar/{{Crypt::encrypt($apartamento->id)}}" class="btn btn-danger eliminar-conjunto"><i class="fa fa-trash-o"></i>
+                                            </a>
                                         </div>
                                     </td>
                                 </tr>

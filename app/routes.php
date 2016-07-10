@@ -42,7 +42,6 @@ Route::group(array('before' => 'auth'), function()
     Route::group(array('prefix' => 'files'), function()
     {
         Route::get('/adjunto/{id}', array('uses' => 'FilesController@link_adjunto','as' => 'adjuntoFile'));
-
     });
 
 
@@ -51,9 +50,8 @@ Route::group(array('before' => 'auth'), function()
     //Routers Super Administrator
     Route::group(array('prefix' => 'admin','before' => 'admin_access'), function()
     {
-        Route::get('/', function(){
-            return View::make('backend.admin.dashboard');
-        });
+
+				Route::get('/', array('uses' => 'AdminController@dashboardSuperAdmin','as' => 'dashboardSuperAdmin'));
 
         Route::group(array('prefix' => 'conjuntos'), function()
         {
@@ -90,11 +88,10 @@ Route::group(array('before' => 'auth'), function()
     Route::group(array('prefix' => 'admin-conjuntos','before' => 'admin_conjuntos_access'), function(){
 
         Route::get('/', array('uses' => 'ConjuntoController@adminIndex','as' => 'HomeAdmin'));
+
+
         Route::group(array('prefix' => 'conjunto'), function()
         {
-
-
-
             Route::get('/', array('uses' => 'ConjuntoController@adminIndex','as' => 'ProfileIndex'));
 
             //Zona Routers
@@ -102,7 +99,7 @@ Route::group(array('before' => 'auth'), function()
 
                 Route::get('/', array('uses' => 'ZonaController@index','as' => 'zonaIndex'));
                 Route::post('/crear', array('uses' => 'ZonaController@store','as' => 'zonaStore'));
-                Route::post('/eliminar', array('uses' => 'ZonaController@destroy','as' => 'zonaDestroy'));
+                Route::get('/eliminar/{id}', array('uses' => 'ZonaController@destroy','as' => 'zonaDestroy'));
                 Route::get('/editar/{id}', array('uses' => 'ZonaController@edit','as' => 'zonaEdit'));
                 Route::post('/actualizar', array('uses' => 'ZonaController@update','as' => 'zonaUpdate'));
                 Route::get('/listar', array('uses' => 'ZonaController@listarZonasConjunto','as' => 'zonaListar'));
@@ -112,7 +109,7 @@ Route::group(array('before' => 'auth'), function()
             Route::group(array('prefix' => 'apartamentos'), function() {
                 Route::get('/', array('uses' => 'ApartamentoController@index','as' => 'apartamentoIndex'));
                 Route::post('/crear', array('uses' => 'ApartamentoController@store','as' => 'zonaStore'));
-                Route::post('/eliminar', array('uses' => 'ApartamentoController@destroy','as' => 'zonaDestroy'));
+                Route::get('/eliminar/{id}', array('uses' => 'ApartamentoController@destroy','as' => 'apartamentoDestroy'));
                 Route::get('/editar/{id}', array('uses' => 'ApartamentoController@edit','as' => 'zonaEdit'));
                 Route::post('/actualizar', array('uses' => 'ApartamentoController@update','as' => 'zonaUpdate'));
                 Route::get('/listar/{id}', array('uses' => 'ApartamentoController@listarApartamentosPorZonaId','as' => 'zonaEdit'));

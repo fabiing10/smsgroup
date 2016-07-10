@@ -7,6 +7,25 @@ class AdminController extends BaseController {
      *
      * @return Response
      */
+
+    public function dashboardSuperAdmin(){
+
+      $admin = DB::table('conjuntos as conjunto')
+          ->join('administrador_conjunto as admin_conjunto', 'conjunto.id', '=', 'admin_conjunto.conjunto_id')
+          ->join('administradores as admin', 'admin.id', '=', 'admin_conjunto.administrador_id')
+          ->join('usuarios as usuario', 'usuario.id', '=', 'admin.usuario_id')
+          ->select('conjunto.id as conjunto_id','usuario.nombres','usuario.apellidos','usuario.email')
+          ->count();
+
+      $conjuntos = DB::table('conjuntos as conjunto')
+              ->select('conjunto.id','conjunto.nit','conjunto.tipo','conjunto.nombre','conjunto.pais','conjunto.ciudad','conjunto.localidad','conjunto.barrio',
+                  'conjunto.direccion','conjunto.telefono','conjunto.estrato')
+              ->count();
+
+
+      return View::make('backend.admin.dashboard')->with('conjuntos', $conjuntos)->with('admin', $admin);
+    }
+
     public function index()
     {
         //Listado general de usuarios administradores
@@ -15,10 +34,6 @@ class AdminController extends BaseController {
         return View::make('backend.admin.admin.index')
             ->with('administradores', $administradores)
             ->with('conjunto', new Conjunto());
-
-
-
-
     }
 
 

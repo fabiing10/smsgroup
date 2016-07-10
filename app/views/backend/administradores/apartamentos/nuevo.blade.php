@@ -55,8 +55,8 @@
 
 
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary  btn-cons">Add</button>
-                    <button type="button" class="btn btn-cons">Close</button>
+                    <button type="submit" class="btn btn-primary  btn-cons">Crear</button>
+                    <button type="button" class="btn btn-cons" onclick="clodeWindows('modal-nuevo-apartamento')">Cerrar</button>
                 </div>
 
                 {{ Form::close() }}

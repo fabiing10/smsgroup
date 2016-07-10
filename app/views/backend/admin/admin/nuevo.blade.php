@@ -41,6 +41,8 @@
                                 <label>Fecha de nacimiento</label>
                                 <input id="fecha_nacimiento" name="fecha_nacimiento" type="text" class="form-control" placeholder="Digite su fecha de Nacimiento">
                             </div>
+
+
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form-group-default">
@@ -103,8 +105,8 @@
 
 
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary  btn-cons">Add</button>
-                    <button type="button" class="btn btn-cons">Close</button>
+                    <button type="submit" class="btn btn-primary  btn-cons">Crear</button>
+                    <button type="button" class="btn btn-cons" onclick="clodeWindows('modal-nuevo-administrador')">Cerrar</button>
                 </div>
 
                 {{ Form::close() }}
@@ -117,4 +119,3 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-    

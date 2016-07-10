@@ -123,7 +123,38 @@ class ZonaController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		$zona = Crypt::decrypt($id);
+
+
+		//Eliminar Usuarios del Apartamento
+		$usuarios = DB::table('usuarios as usuario')
+				->join('usuario_apartamento as u_a', 'usuario.id', '=', 'u_a.usuario_id')
+				->join('apartamentos as apartamento', 'u_a.apartamento_id', '=', 'apartamento.id')
+				->join('zonas as zona', 'zona.id', '=', 'apartamento.zona_id')
+				->select('usuario.id')
+				->where('apartamento.zona_id', '=', $zona)
+				->get();
+
+		foreach($usuarios as $usuario){
+				Usuario::destroy($usuario->id);
+		}
+
+
+		//Elimina el apartamentos
+		$apartamentos = DB::table('zonas as zona')
+				->join('apartamentos as apartamento', 'apartamento.zona_id', '=', 'zona.id')
+				->join('conjuntos as conjunto', 'zona.conjunto_id', '=', 'conjunto.id')
+				->select('apartamento.id')
+				->where('zona.id', '=', $zona)
+				->get();
+
+		foreach($apartamentos as $apartamento){
+				Apartamento::destroy($apartamento->id);
+		}
+
+		Zona::destroy($zona);
+
+		return Redirect::to('admin-conjuntos/conjunto/zonas');
 	}
 
 

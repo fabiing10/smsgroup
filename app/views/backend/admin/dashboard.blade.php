@@ -75,7 +75,7 @@
                         <!-- START PANEL -->
                         <div id="portlet-linear" class="panel panel-default">
                             <div class="panel-heading ">
-                                <div class="panel-title">Usuarios
+                                <div class="panel-title">Conjuntos
                                 </div>
                                 <div class="panel-controls">
                                     <ul>
@@ -90,7 +90,7 @@
                             </div>
                             <div class="panel-body">
                                 <h3>
-                                    <span class="semi-bold">50</span></h3>
+                                    <span class="semi-bold">{{$conjuntos}}</span></h3>
                             </div>
                         </div>
                         <!-- END PANEL -->
@@ -100,7 +100,7 @@
                         <!-- START PANEL -->
                         <div id="portlet-linear" class="panel panel-default">
                             <div class="panel-heading ">
-                                <div class="panel-title">Zonas
+                                <div class="panel-title">Administradores
                                 </div>
                                 <div class="panel-controls">
                                     <ul>
@@ -115,59 +115,12 @@
                             </div>
                             <div class="panel-body">
                                 <h3>
-                                    <span class="semi-bold">15</span> </h3>
+                                    <span class="semi-bold">{{$admin}}</span> </h3>
                             </div>
                         </div>
                         <!-- END PANEL -->
                     </div>
-                    <div class="col-sm-3">
-                        <!-- START PANEL -->
-                        <div id="portlet-linear" class="panel panel-default">
-                            <div class="panel-heading ">
-                                <div class="panel-title">Apartamentos
-                                </div>
-                                <div class="panel-controls">
-                                    <ul>
-                                        <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i class="portlet-icon portlet-icon-collapse"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i class="portlet-icon portlet-icon-refresh"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-close" data-toggle="close"><i class="portlet-icon portlet-icon-close"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="semi-bold">250</span> </h3>
-                            </div>
-                        </div>
-                        <!-- END PANEL -->
-                    </div>
-                    <div class="col-sm-3">
-                        <!-- START PANEL -->
-                        <div id="portlet-linear" class="panel panel-default">
-                            <div class="panel-heading ">
-                                <div class="panel-title">Mensajes
-                                </div>
-                                <div class="panel-controls">
-                                    <ul>
-                                        <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i class="portlet-icon portlet-icon-collapse"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i class="portlet-icon portlet-icon-refresh"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-close" data-toggle="close"><i class="portlet-icon portlet-icon-close"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="semi-bold">20</span></h3>
-                            </div>
-                        </div>
-                        <!-- END PANEL -->
-                    </div>
+
                 </div>
             </div>
             <!-- END CONTAINER FLUID -->

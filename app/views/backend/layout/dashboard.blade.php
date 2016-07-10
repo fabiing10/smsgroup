@@ -10,8 +10,11 @@
     <link href="{{ asset('build/assets/plugins/jquery-scrollbar/jquery.scrollbar.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ asset('build/assets/plugins/bootstrap-select2/select2.css') }}" rel="stylesheet" type="text/css" media="screen" />
     <link href="{{ asset('build/assets/plugins/switchery/css/switchery.min.css') }}" rel="stylesheet" type="text/css" media="screen" />
-    <script src="{{ asset('build/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css') }}" type="text/javascript"></script>
-    <script src="{{ asset('build/assets/plugins/jquery-menuclipper/jquery.menuclipper.css') }}" type="text/javascript"></script>
+    <link href="{{ asset('build/assets/plugins/bootstrap3-wysihtml5/bootstrap3-wysihtml5.min.css') }}" type="text/css" media="screen" />
+    <link href="{{ asset('build/assets/plugins/jquery-menuclipper/jquery.menuclipper.css') }}" type="text/css" media="screen" />
+    <link href="{{ asset('build/assets/plugins/bootstrap-datepicker/css/datepicker.css') }}" type="text/css" media="screen" />
+
+
     <link href="{{ asset('build/pages/css/pages-icons.css" rel="stylesheet') }}" type="text/css">
     <link class="main-stylesheet" href="{{ asset('build/pages/css/pages.css') }}" rel="stylesheet" type="text/css" />
     @yield('css')
