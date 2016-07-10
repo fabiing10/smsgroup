@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="panel-body">
                                         <h3>Conjuntos</h3>
-                                        <p>Breaking convention again, we have inctroduced a notification system which variates based on the type and level of importance of the message. Thanks to this, an alert by the side of your screen would easily catch your attention.</p>
+                                        <p>Sr. Administrador le damos la bienvenida a la plataforma de administración del conjunto, este es un espacio Desarrollado para optimizar sus funciones como administrador, En esta plataforma encontrará las herramientas necesarias para atender cada uno de los requerimientos de la copropiedad.</p>
 
                                     </div>
                                 </div>

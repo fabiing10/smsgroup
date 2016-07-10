@@ -21,7 +21,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
-                            <label>Tipo Zona</label>
+                            <label>Tipo de P.H</label>
                             <select class="full-width" data-init-plugin="select2" id="tipo" name="tipo">
                                 <optgroup label="Tipo Conjunto">
                                     <option value="Apartamentos">Apartamentos</option>
@@ -106,24 +106,9 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="form-group form-group-default">
-                            <label>Latitud</label>
-                            <input id="latitud" name="latitud" type="text" class="form-control" placeholder="Digite la Latitud del mapa">
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="form-group form-group-default">
-                            <label>Longitud</label>
-                            <input id="longitud" name="longitud" type="text" class="form-control" placeholder="Digite la longitud del mapa">
-                        </div>
-                    </div>
-                </div>
-
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary  btn-cons">Add</button>
-                    <button type="button" class="btn btn-cons">Close</button>
+                    <button type="submit" class="btn btn-primary  btn-cons">Crear</button>
+                    <button type="button" class="btn btn-cons" onclick="clodeWindows('nuevoConjunto')">Cerrar</button>
                 </div>
 
                 {{ Form::close() }}
@@ -136,4 +121,3 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
-    
