@@ -106,7 +106,7 @@
 
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary  btn-cons">Enviar Mensaje</button>
-                        <button type="button" class="btn btn-cons">Close</button>
+                        <button type="button" class="btn btn-cons" onclick="clodeWindows('modal-nuevo-mensaje')">Cerrar</button>
                     </div>
 
                     {{ Form::close() }}

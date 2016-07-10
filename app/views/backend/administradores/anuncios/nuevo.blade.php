@@ -46,7 +46,7 @@
 
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary  btn-cons">Crear Anuncio</button>
-                        <button type="button" class="btn btn-cons">Cerrar</button>
+                        <button type="button" class="btn btn-cons" onclick="clodeWindows('modal-nuevo-anuncio')">Cerrar</button>
                     </div>
 
                     {{ Form::close() }}
