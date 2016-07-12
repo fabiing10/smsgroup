@@ -9,7 +9,7 @@ class MensajeController extends \BaseController {
 	 */
     private $fileSave;
     private $isAttachment;
-
+		private $id_mu;
 
 
     public function adminIndex(){
@@ -25,6 +25,10 @@ class MensajeController extends \BaseController {
             ->with('zonas', $zonas)
             ->with('mensajes', $mensajes->listarMensajesConjunto($conjunto));
     }
+
+		public function entrantesIndex(){
+			return View::make('backend.administradores.mensajes.entrada');
+		}
 
     public function adminListarMensajeId($mensajeId){
         $id = Crypt::decrypt($mensajeId);
@@ -59,6 +63,7 @@ class MensajeController extends \BaseController {
             ->join('mensaje_usuario as m_u', 'mensaje.id', '=', 'm_u.mensaje_id')
             ->select('mensaje.id','mensaje.tipo','mensaje.asunto','mensaje.mensaje','mensaje.fecha','mensaje.importancia')
             ->where('m_u.to_id', '=', $user->id)
+						->orWhere('m_u.from_id', '=', $user->id)
             ->get();
         $emails = array("emails"=>$query);
         return $emails;
@@ -70,17 +75,22 @@ class MensajeController extends \BaseController {
         $fecha = date("Y-m-d");
 
         $user = Auth::user();
-        $query = DB::table('mensaje_usuario as mensaje')->select('mensaje.id')->where('mensaje.to_id', '=', $user->id)->where('mensaje.mensaje_id', '=', $id)->get();
+        $query = DB::table('mensaje_usuario as mensaje')
+				->select('mensaje.id')
+				->where('mensaje.to_id', '=', $user->id)
+				->orWhere('mensaje.from_id', '=', $user->id)
+				->where('mensaje.mensaje_id', '=', $id)->get();
         foreach($query as $q){
-            $id_mu = $q->id;
+            $this->id_mu = $q->id;
         }
-        $update = MensajeUsuario::find($id_mu);
+        $update = MensajeUsuario::find($this->id_mu);
         $update->leido = 1;
         $update->fecha_leido = $fecha;
         $update->save();
 
         $mensaje = Mensaje::find($id);
         return $mensaje;
+
 
     }
 
@@ -129,11 +139,20 @@ class MensajeController extends \BaseController {
 
     }
 
+		public function respuestaMensajeId($mensajeId){
+			$response = Respuesta::where('mensaje_id', '=' ,$mensajeId)->get();
+			return $response;
+		}
+
     public function listarRespuestasMensajeId($mensaje){
 
         $user = Auth::user();
         if($user->rol == "Usuario" ){
-            $response = Respuesta::where('mensaje_id', '=' ,$mensaje)->where('usuario_id', '=' ,$user->id)->get();
+            $response = Respuesta::where('mensaje_id', '=' ,$mensaje)->get();
+
+
+        }else if($user->rol == "Administrador" ){
+            $response = Respuesta::where('mensaje_id', '=' ,$mensaje)->get();
         }else{
             $data = explode("-",$mensaje);
             $mensaje = $data[0];
@@ -361,6 +380,104 @@ class MensajeController extends \BaseController {
 
 
 
+
+	}
+
+	public function guardarMensajeUsuario(){
+
+		//Get date Bogota/Colombia
+		date_default_timezone_set("America/Bogota");
+		$fecha = date("Y-m-d");
+		$fileSave = false;
+
+		$input = Input::all();
+		$rules = array(
+				'file_' => 'mimes:jpeg,jpg,png,pdf|max:8000',
+		);
+
+		$validation = Validator::make($input, $rules);
+
+		if ($validation->fails())
+		{
+				//return Response::make($validation->errors->first(), 400);
+				return "Incorrecto";
+		}else{
+
+
+				$mensaje = new Mensaje();
+				$mensaje->asunto = Input::get('asunto');
+				$mensaje->mensaje = Input::get('mensaje');
+				$mensaje->importancia = Input::get('importancia');
+
+				$mensaje->tipo = 'administrator';
+
+
+				if(Input::hasFile('file_')){
+
+						$mensaje->adjunto = true;
+						$this->isAttachment = true;
+						$directory = public_path().'/uploads';
+						$file = Input::file('file_');
+						// multiple files submitted
+
+						if(is_array($file))
+						{
+								foreach($file as $part){
+										$filename = $part->getClientOriginalName();
+										$part->move($directory, $filename);
+								}
+						}else //single file
+						{
+								$filename = $fecha.'-'.sha1(time());
+								$extension = $file->getClientOriginalExtension();
+								$size = $file->getClientSize();
+								$mimeType = $file->getClientMimeType();
+								$data = $filename.'.'.$extension;
+								$uploadSuccess = Input::file('file_')->move($directory,$data);
+
+								if( $uploadSuccess ) {
+										$this->fileSave = true;
+								} else {
+										$this->fileSave = false;
+								}
+						}
+
+				}else{
+
+						$mensaje->adjunto = false;
+						$this->isAttachment = false;
+
+				}
+				//Save Message in Database
+				$mensaje->fecha = $fecha;
+				$mensaje->respuesta = true;
+				$mensaje->save();
+
+				if($this->isAttachment){
+						//Save File in Database
+						$adjunto = new Adjunto();
+						$adjunto->nombre = $filename;
+						$adjunto->ruta = $directory.'/'.$data;
+						$adjunto->tipo = $mimeType;
+						$adjunto->peso = $size;
+						$adjunto->fecha = $fecha;
+						$adjunto->save();
+
+						//Save Relationship Message and Attachment
+
+						$adjuntoMensaje = new AdjuntoMensaje();
+						$adjuntoMensaje->adjunto_id = $adjunto->id;
+						$adjuntoMensaje->mensaje_id = $mensaje->id;
+						$adjuntoMensaje->save();
+				}
+
+					$mensaje->guardarMensajeAdministrador($mensaje->id);
+
+					return Redirect::to('usuario/mensajes');
+
+
+
+		}
 
 	}
 

@@ -1,16 +1,6 @@
 (function($) {
     'use strict';
 
-    $('#summernoteAdmin').summernote({
-        height: 200,
-        onfocus: function(e) {
-            $('body').addClass('overlay-disabled');
-        },
-        onblur: function(e) {
-            $('body').removeClass('overlay-disabled');
-        }
-    });
-
     $('#summernote').summernote({
         height: 200,
         onfocus: function(e) {
@@ -67,7 +57,7 @@
     $('.email-list').length && $.ajax({
         dataType: "json",
         //url: "http://revox.io/json/emails.json",
-        url: "mensajes/listar",
+        url: "entrada",
         success: function(data) {
 
             $.each(data.emails, function(i) {
@@ -130,7 +120,7 @@
 
         $.ajax({
             dataType: "json",
-            url: "mensajes/listar/"+id,
+            url: "entrada/"+id,
             success: function(data) {
 
                 var emailOpened = $('.email-opened');
@@ -157,6 +147,7 @@
                     !$('.email-reply').data('wysihtml5') && $('.email-reply').wysihtml5(editorOptions);
 
                 }else{
+                  listarRespuestas(id);
                     $( ".content-respuesta-data" ).empty();
                     $("#respuesta-content").fadeOut();
                     $(".reply-msg").fadeOut();
@@ -253,7 +244,7 @@
     function getAttachment(id){
         $.ajax({
             dataType: "json",
-            url: "mensajes/adjunto/"+id,
+            url: "adjunto/"+id,
             success: function(data) {
 
                 var ruta = "/uploads/";
@@ -274,7 +265,7 @@
     function listarRespuestas(id){
         $.ajax({
             dataType: "json",
-            url: "mensajes/respuestas/"+id,
+            url: "listar/respuestas/"+id,
             success: function(data) {
                 $( ".content-respuesta-data" ).empty();
                 $(".content-respuesta-data").fadeIn();
@@ -294,13 +285,13 @@
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
             'mensaje-id'              : $('input[name=mensaje-id]').val(),
-            'respuesta_mensaje'       : $("#summernoteAdmin").val()
+            'respuesta_mensaje'       : $("#summernote").val()
         };
 
         // process the form
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'mensajes/responder', // the url where we want to POST
+            url         : 'responder', // the url where we want to POST
             data        : formData, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
             encode          : true
@@ -316,7 +307,10 @@
 
 
                 });
-                $("#summernoteAdmin").html("");
+                $("#summernote").html("");
+                $(".note-editable").html("");
+
+
 
 
                 // here we will handle errors and validation messages

@@ -129,13 +129,20 @@ Route::group(array('before' => 'auth'), function()
             //Mensajes Routers
             Route::group(array('prefix' => 'mensajes'), function() {
                 Route::get('/', array('uses' => 'MensajeController@adminIndex','as' => 'adminIndex'));
+								Route::get('/entrantes', array('uses' => 'MensajeController@entrantesIndex','as' => 'entrantesIndex'));
+
+
+								Route::get('/adjunto/{id}', array('uses' => 'MensajeController@listarAdjuntoMensajeId','as' => 'adjuntoId'));
                 Route::post('/crear', array('uses' => 'MensajeController@store','as' => 'mensajeStore'));
                 Route::get('/listar/{id}', array('uses' => 'MensajeController@adminListarMensajeId','as' => 'adminListarId'));
                 Route::get('/reporte/{id}', array('uses' => 'MensajeController@adminListarReporteMensajeId','as' => 'adminListarReporteId'));
                 Route::get('/respuestas/{id}', array('uses' => 'MensajeController@listarUsuariosRespuesta','as' => 'adminListRespuesta'));
                 Route::get('/listar/respuestas/{id}', array('uses' => 'MensajeController@listarRespuestasMensajeId','as' => 'listRespuestasMensajeId'));
                 Route::get('/pdf/{id}', array('uses' => 'MensajeController@pdfReporte','as' => 'pdfReporte'));
-
+								Route::get('/entrada', array('uses' => 'MensajeController@listarMensajesUsuario','as' => 'mensajeList'));
+								Route::get('/entrada/{id}', array('uses' => 'MensajeController@listarMensajeId','as' => 'mensajeListId'));
+								Route::post('/responder', array('uses' => 'MensajeController@reponderMensajeId','as' => 'reponderMensajeId'));
+								Route::get('/listar/respuestas/{id}', array('uses' => 'MensajeController@listarRespuestasMensajeId','as' => 'respuestasMensajeId'));
 
             });
 
@@ -172,6 +179,8 @@ Route::group(array('before' => 'auth'), function()
             Route::get('/adjunto/{id}', array('uses' => 'MensajeController@listarAdjuntoMensajeId','as' => 'adjuntoId'));
             Route::post('/responder', array('uses' => 'MensajeController@reponderMensajeId','as' => 'responderMensajeId'));
             Route::get('/respuestas/{id}', array('uses' => 'MensajeController@listarRespuestasMensajeId','as' => 'respuestasMensajeId'));
+
+						Route::post('/crear', array('uses' => 'MensajeController@guardarMensajeUsuario','as' => 'guardarMensajeUsuario'));
         });
 
         Route::group(array('prefix' => 'anuncios'), function()

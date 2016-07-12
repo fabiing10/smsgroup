@@ -3,7 +3,7 @@
 <!-- Create General Section Sidebar -->
 @section('sidebar')
 <!-- Include the menu -->
-@include('backend.layout.menu.usuarios')
+@include('backend.layout.menu.administradores')
 @stop
 
 <!-- Create General Section Header -->
@@ -73,20 +73,15 @@
 
 
 @section('content')
-@include('backend.usuarios.mensajes.nuevo')
-
 <div class="page-content-wrapper full-height">
     <!-- START PAGE CONTENT -->
     <div class="content full-height">
         <!-- START EMAIL -->
         <div class="email-wrapper">
-
             <!-- START EMAIL SIDEBAR MENU-->
             <!-- END EMAL SIDEBAR MENU -->
             <!-- START EMAILS LIST -->
-            <div class="email-list b-r b-grey">
-              <button id="nuevo-mensaje" class="btn btn-primary btn-cons"><i class="fa fa-plus"></i> Escribir mensaje</button>
-               <a class="email-refresh" href="#"><i class="fa fa-refresh"></i></a>
+            <div class="email-list b-r b-grey"> <a class="email-refresh" href="#"><i class="fa fa-refresh"></i></a>
                 <div id="emailList">
                     <!-- START EMAIL LIST SORTED BY DATE -->
                     <!-- END EMAIL LIST SORTED BY DATE -->
@@ -140,7 +135,7 @@
                         <div class="wysiwyg5-wrapper b-a b-grey m-t-30 reply-msg">
                             {{ Form::open(array('url' => 'usuario/mensajes/responder', 'class' => '', 'id' => 'respuesta-form', 'role' => 'form','enctype'=>'multipart/form-data')) }}
                             <input type="hidden" name="mensaje-id" id="data-e" value="">
-                            <textarea name="respuesta_mensaje" id="summernoteAdmin"></textarea>
+                            <textarea name="respuesta_mensaje" id="summernote"></textarea>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                                 <button type="button" class="btn btn-cons">Close</button>
@@ -172,7 +167,6 @@
 @stop
 
 @section('specific_js')
-<script src="{{ asset('build/assets/js/script/mensajes.js') }}" type="text/javascript"></script>
-<script src="{{ asset('build/pages/js/pages.email.js') }}" type="text/javascript"></script>
+<script src="{{ asset('build/pages/js/pages.email_admin.js') }}" type="text/javascript"></script>
 <script src="{{ asset('build/assets/js/init_a.js') }}" type="text/javascript"></script>
 @stop

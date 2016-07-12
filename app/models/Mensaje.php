@@ -57,6 +57,44 @@ class Mensaje extends \Eloquent {
      *
      *
      * */
+    public function guardarMensajeAdministrador($MensajeId){
+      $user = Auth::user();
+
+      $query = DB::table('usuarios as usuario')
+          ->join('usuario_apartamento as u_a', 'usuario.id', '=', 'u_a.usuario_id')
+          ->join('apartamentos as apartamento', 'u_a.apartamento_id', '=', 'apartamento.id')
+          ->join('zonas as zona', 'apartamento.zona_id', '=', 'zona.id')
+          ->join('conjuntos as conjunto', 'conjunto.id', '=', 'zona.conjunto_id')
+          ->select('conjunto.id','conjunto.nombre')
+          ->where('usuario.id', '=', $user->id)
+          ->get();
+
+      foreach($query as $q){
+        $id = $q->id;
+      }
+
+       $administrador = DB::table('usuarios as usuario')
+          ->join('administradores as admin', 'usuario.id', '=', 'admin.usuario_id')
+          ->join('administrador_conjunto as adminconjunto', 'admin.id', '=', 'adminconjunto.administrador_id')
+          ->join('conjuntos as conjunto', 'conjunto.id', '=', 'adminconjunto.conjunto_id')
+          ->select('usuario.id','usuario.nombres')
+          ->where('conjunto.id', '=', $id)
+          ->get();
+
+      foreach($administrador as $admin){
+          $adminId = $admin->id;
+      }
+
+      $mensajeUsuario = new MensajeUsuario();
+      $mensajeUsuario->from_id = $user->id;
+      $mensajeUsuario->to_id = $adminId;
+      $mensajeUsuario->mensaje_id =$MensajeId;
+      $mensajeUsuario->save();
+
+      return true;
+
+    }
+
 
     public function guardarMensajeConjunto($MensajeId){
 

@@ -105,8 +105,8 @@ class ConjuntoController extends \BaseController {
             $conjunto->telefono = Input::get('telefono');
             $conjunto->estrato = Input::get('estrato');
             $conjunto->telefono_cuadrante = Input::get('telefono_cuadrante');
-            $conjunto->map_latitud = Input::get('latitud');
-            $conjunto->map_longitud = Input::get('longitud');
+            $conjunto->map_latitud = '';
+            $conjunto->map_longitud = '';
             $conjunto->save();
 
             // redirect

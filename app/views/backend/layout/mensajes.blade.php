@@ -69,7 +69,7 @@
 <!-- END VENDOR JS -->
 <!-- BEGIN CORE TEMPLATE JS -->
 <script src="{{ asset('build/pages/js/pages.min.js') }}"></script>
-<script src="{{ asset('build/pages/js/pages.email.js') }}" type="text/javascript"></script>
+
 <!-- END CORE TEMPLATE JS -->
 <!-- BEGIN PAGE LEVEL JS -->
 

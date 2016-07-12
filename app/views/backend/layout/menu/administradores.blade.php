@@ -48,6 +48,10 @@
                 {{ HTML::linkRoute('adminIndex', 'Mensajes') }}
                 <span class="icon-thumbnail"><i class="fa fa-pie-chart"></i></span>
             </li>
+            <li class="">
+                {{ HTML::linkRoute('entrantesIndex', 'Entrantes') }}
+                <span class="icon-thumbnail"><i class="fa fa-pie-chart"></i></span>
+            </li>
 
             <li class="">
                 {{ HTML::linkRoute('AnuncioadminIndex', 'Noticias') }}
