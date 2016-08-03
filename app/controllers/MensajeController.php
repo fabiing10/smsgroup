@@ -98,7 +98,7 @@ class MensajeController extends \BaseController {
 
         $query = DB::table('adjunto_mensaje as a_m')
             ->join('adjuntos as adjunto', 'a_m.adjunto_id', '=', 'adjunto.id')
-            ->select('adjunto.id','adjunto.nombre')
+            ->select('adjunto.id','adjunto.nombre','adjunto.tipo')
             ->where('a_m.mensaje_id', '=',$id)
             ->get();
 
@@ -253,7 +253,7 @@ class MensajeController extends \BaseController {
 
         $input = Input::all();
         $rules = array(
-            'file_' => 'mimes:jpeg,jpg,png,pdf|max:8000',
+            'file_' => 'mimes:jpeg,jpg,png,pdf,doc,docx,xls|max:8000',
         );
 
         $validation = Validator::make($input, $rules);
@@ -261,7 +261,7 @@ class MensajeController extends \BaseController {
         if ($validation->fails())
         {
             //return Response::make($validation->errors->first(), 400);
-            return "Incorrecto";
+            return Redirect::to('admin-conjuntos/conjunto/mensajes');
         }else{
 
 
@@ -392,15 +392,15 @@ class MensajeController extends \BaseController {
 
 		$input = Input::all();
 		$rules = array(
-				'file_' => 'mimes:jpeg,jpg,png,pdf|max:8000',
+				'file_' => 'mimes:jpeg,jpg,png,pdf,doc,docx|max:8000',
 		);
 
 		$validation = Validator::make($input, $rules);
 
 		if ($validation->fails())
 		{
-				//return Response::make($validation->errors->first(), 400);
-				return "Incorrecto";
+				return Redirect::to('usuario/mensajes');
+
 		}else{
 
 

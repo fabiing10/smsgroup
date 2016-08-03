@@ -31,10 +31,7 @@
                 <a href="/usuario/anuncios"><span class="title">Noticias</span></a>
                 <span class="icon-thumbnail"><i class="pg-home"></i></span>
             </li>
-            <li class="m-t-5 ">
-                <a href="/usuario/publicidad"><span class="title">Publicidad</span></a>
-                <span class="icon-thumbnail"><i class="pg-home"></i></span>
-            </li>
+        
 
         </ul>
         <div class="clearfix"></div>

@@ -260,8 +260,20 @@
                 var link;
                 $.each(data, function(idx, obj) {
 
+                    var extension;
+                    if(obj.tipo == "image/png"){
+                      extension = ".png";
+                    }else if(obj.tipo == "application/pdf"){
+                      extension = ".pdf";
+                    }else if(obj.tipo == "image/jpeg"){
+                      extension = ".jpg";
+                    }else if(obj.tipo == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"){
+                      extension = ".docx";
+                    }else{
+                      extension = ".doc";
+                    }
 
-                    link = ruta+obj.nombre+".pdf";
+                    link = ruta+obj.nombre+extension;
 
                     $("#adjunto-href").attr("href", link);
                 });

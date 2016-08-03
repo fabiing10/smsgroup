@@ -19,14 +19,41 @@ class FilesController extends \BaseController {
         }else{
             $adjunto = Adjunto::find($id);
 
-            $file = public_path().'/uploads/'.$adjunto->nombre.'.pdf';
+
+
+            $extension = ".pdf";
+            if($adjunto->tipo == "image/png"){
+              $extension = ".pdf";
+            }elseif($adjunto->tipo == "application/pdf"){
+              $extension = ".pdf";
+            }elseif($adjunto->tipo == "image/jpeg"){
+              $extension = ".jpg";
+            }elseif($adjunto->tipo == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"){
+              $extension = ".docx";
+            }else{
+              $extension = ".doc";
+            }
+
+            $file = public_path().'/uploads/'.$adjunto->nombre.$extension;
 
             if (File::isFile($file))
             {
                 $file = File::get($file);
                 $response = Response::make($file, 200);
                 // using this will allow you to do some checks on it (if pdf/docx/doc/xls/xlsx)
-                $response->header('Content-Type', 'application/pdf');
+
+                if($adjunto->tipo == "image/png"){
+                  $response->header('Content-Type', 'image/png');
+                }elseif($adjunto->tipo == "application/pdf"){
+                  $response->header('Content-Type', 'application/pdf');
+                }elseif($adjunto->tipo == "image/jpeg"){
+                  $response->header('Content-Type', 'image/jpeg');
+                }elseif($adjunto->tipo == "application/vnd.openxmlformats-officedocument.wordprocessingml.document"){
+                  $response->header('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+                }else{
+                  $response->header('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+                }
+
                 return $response;
             }
         }
