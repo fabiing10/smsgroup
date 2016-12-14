@@ -112,7 +112,6 @@ class UsuarioController extends \BaseController {
 
         // process the login
         if ($validator->fails()) {
-
             //Redirect
             if($user->rol = "Administrador"){
                 return Redirect::to('admin-conjuntos/conjunto/usuarios')->withErrors($validator);
@@ -124,23 +123,23 @@ class UsuarioController extends \BaseController {
 
             // Get User ID
             $id = Crypt::decrypt(Input::get('user_active'));
+
             // Actualizar Usuario
-            $usuario = Usuario::find($id);
+						$usuario = Usuario::find($id);
+						$usuario->identificacion = Input::get('u_identificacion');
+						$usuario->nombres = Input::get('u_nombres');
+						$usuario->apellidos = Input::get('u_apellidos');
+						$usuario->fecha_nacimiento = Input::get('u_fecha_nacimiento');
+						$usuario->email = Input::get('u_email');
+						$usuario->telefono = Input::get('u_telefono');
+						$usuario->celular = Input::get('u_celular');
+						$usuario->active = 1;
+						//$usuario->genero = Input::get('genero');
+						$usuario->active = 1;
+						$usuario->username = Input::get('u_username');
+						$usuario->password = Hash::make(Input::get('u_password'));
+						$usuario->save();
 
-                $usuario->identificacion = Input::get('identificacion');
-                $usuario->nombres = Input::get('nombres');
-                $usuario->apellidos = Input::get('apellidos');
-                $usuario->fecha_nacimiento = Input::get('fecha_nacimiento');
-                $usuario->email = Input::get('email');
-                $usuario->telefono = Input::get('telefono');
-                $usuario->celular = Input::get('u_celular');
-                $usuario->active = 1;
-                $usuario->genero = Input::get('genero');
-                $usuario->active = 1;
-                $usuario->username = Input::get('username');
-                $usuario->password = Hash::make(Input::get('password'));
-
-            $usuario->save();
             $page = Input::get('page');
             if($page == "default"){
 

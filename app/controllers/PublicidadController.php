@@ -66,7 +66,7 @@ class PublicidadController extends \BaseController {
         if ($validation->fails())
         {
             //return Response::make($validation->errors->first(), 400);
-            return "Incorrecto";
+            return Redirect::to('admin/publicidad');
         }else{
 
             $publicidad = new Publicidad();

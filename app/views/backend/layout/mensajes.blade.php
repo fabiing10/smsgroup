@@ -14,6 +14,7 @@
     <link href="{{ asset('build/assets/plugins/jquery-menuclipper/jquery.menuclipper.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('build/pages/css/pages-icons.css') }}" rel="stylesheet" type="text/css">
     <link class="main-stylesheet" href="{{ asset('build/pages/css/pages.css') }}" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="{{ asset('build/assets/css/style.css') }}" rel="stylesheet" type="text/css" />
     @yield('css')
     <!--[if lte IE 9]>
     <link href="pages/css/ie9.css') }}" rel="stylesheet" type="text/css" />

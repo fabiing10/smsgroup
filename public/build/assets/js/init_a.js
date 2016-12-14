@@ -4,6 +4,7 @@ $(document).ready(function() {
     // Replace onSearchSubmit() and onKeyEnter() with
     // your logic to perform a search and display results
 
+
     //Conjuntos Script JS
     $('#nuevo-apartamento').click(function() {
         $('#modal-nuevo-apartamento').modal('show');
@@ -139,5 +140,3 @@ $(document).ready(function() {
 
 
 });
-
-

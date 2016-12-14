@@ -124,9 +124,11 @@ class AdminController extends BaseController {
      * @param  int  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit($adminId)
     {
-        //
+      $id = Crypt::decrypt($adminId);
+      $usuario = Usuario::find($id);
+      return $usuario;
     }
 
 
@@ -136,9 +138,39 @@ class AdminController extends BaseController {
      * @param  int  $id
      * @return Response
      */
-    public function update($id)
+    public function update()
     {
-        //
+      $rules = array(
+
+      );
+      $validator = Validator::make(Input::all(), $rules);
+
+      // process the login
+      if ($validator->fails()) {
+          return Redirect::to('admin/administradores')
+              ->withErrors($validator);
+      } else {
+
+        $id = Crypt::decrypt(Input::get('user_active'));
+        $usuario = Usuario::find($id);
+        $usuario->identificacion       = Input::get('u_identificacion');
+        $usuario->nombres      = Input::get('u_nombres');
+        $usuario->apellidos = Input::get('u_apellidos');
+        $usuario->fecha_nacimiento = Input::get('u_fecha_nacimiento');
+        $usuario->email = Input::get('u_email');
+        $usuario->telefono = Input::get('u_telefono');
+        $usuario->celular = Input::get('u_celular');
+        $usuario->username = Input::get('u_username');
+        if(Input::get('u_password') != ""){
+          $usuario->password = Hash::make(Input::get('u_password'));
+        }
+
+        $usuario->save();
+        return Redirect::to('admin/administradores');
+
+      }
+
+
     }
 
 

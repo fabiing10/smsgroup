@@ -14,13 +14,11 @@
                     <input type="hidden" name="value-a" id="value-a" value="" />
                     <input type="hidden" name="method" id="method" value="delete" />
                     <div class="row">
-
                         <div class="col-sm-6 m-t-10 sm-m-t-10">
                             <button type="submit" class="btn btn-primary btn-block m-t-5">Eliminar</button>
                         </div>
-
                         <div class="col-sm-6 m-t-10 sm-m-t-10">
-                            <button type="button" class="btn btn-primary btn-block m-t-5 c-a-e-conjunto">Cancelar</button>
+                            <button type="button" class="btn btn-primary btn-block m-t-5 c-a-e-conjunto" onclick="clodeWindows('eliminarAdministrador')">Cancelar</button>
                         </div>
                     </div>
                     {{ Form::close() }}

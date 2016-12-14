@@ -38,7 +38,9 @@
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
                             <label>Fecha de nacimiento</label>
-                            <input id="u_fecha_nacimiento" name="u_fecha_nacimiento" type="text" class="form-control" placeholder="Digite su fecha de Nacimiento">
+                            <input id="u_fecha_nacimiento" name="u_fecha_nacimiento" type="text" class="form-control" data-date-format='yyyy-mm-dd'>
+
+
                         </div>
                     </div>
                     <div class="col-sm-6">
@@ -79,7 +81,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary  btn-cons">Actualizar Perfil</button>
-                    <button type="button" class="btn btn-cons">Cerrar</button>
+                    <button type="button" class="btn btn-cons" onclick="clodeWindows('modal-actualizar-usuario')">Cerrar</button>
                 </div>
                 {{ Form::close() }}
             </div>

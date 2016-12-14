@@ -77,11 +77,11 @@
                         <!-- END BREADCRUMB -->
                         <div class="container-md-height m-b-20">
                             <div class="row row-md-height">
-                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-white">
+                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-anuncios" style="padding: 8% 0px;">
                                     <!-- START PANEL -->
                                     <div class="full-height">
                                         <div class="panel-body text-center">
-                                                <i class="fa fa-user" style="font-size: 60px;margin-right: 15px;"></i>
+
                                         </div>
                                     </div>
                                     <!-- END PANEL -->
@@ -157,8 +157,6 @@
 
                                     <td>
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-success actualizar-anuncio" data-value="{{Crypt::encrypt($anuncio->id)}}"><i class="fa fa-pencil"></i>
-                                            </button>
                                             <button type="button" class="btn btn-danger eliminar-anuncio"  data-value="{{Crypt::encrypt($anuncio->id)}}"><i class="fa fa-trash-o"></i>
                                             </button>
                                         </div>

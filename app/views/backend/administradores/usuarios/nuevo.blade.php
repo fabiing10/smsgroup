@@ -34,10 +34,13 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="form-group form-group-default" style="padding: 12px 12px;">
-                            <label>Fecha de nacimiento</label>
-                            <input id="fecha_nacimiento" name="fecha_nacimiento" type="text" class="form-control" placeholder="Digite su fecha de Nacimiento">
-                        </div>
+                      <div class="form-group form-group-default" style="padding: 12px 12px;">
+                          <label>Fecha de nacimiento</label>
+
+                            <input type="text" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" data-date-format='yyyy-mm-dd'>
+
+                      </div>
+
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
@@ -76,17 +79,12 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
-                            <label>Zona / Rol</label>
+                            <label>Zona</label>
                             <select class="full-width" data-init-plugin="select2" id="zona_select" name="zona_select">
                                     <optgroup label="Unidad">
-                                     <option>Seleccione una Unidad / Rol</option>
+                                     <option>Seleccione una Unidad</option>
                                     @foreach($zonas as $zona)
-
-                                        @if($zona->tipo == "Contador" || $zona->tipo == "Revisor_Fiscal")
-                                          <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->value }}</option>
-                                        @else
                                           <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->tipo }} - {{ $zona->value }}</option>
-                                        @endif
 
                                     @endforeach
                                 </optgroup>
@@ -95,7 +93,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="form-group form-group-default">
-                            <label>Apartamento / Funcion</label>
+                            <label>Apartamento</label>
                             <select class="full-width" data-init-plugin="select2" id="apartamento_select" name="apartamento_select">
                                 <optgroup label="Seleccione un apartamento" id="inner-html">
 

@@ -6,3 +6,18 @@
 .border-radius{
     border-radius: 100px;
 }
+
+.bg-admin{
+  background-image: url('../img/banner-admin.jpg');
+  background-size: cover;
+}
+
+.bg-anuncios{
+  background-image: url('../img/banner-publicidad.jpg');
+  background-size: cover;
+}
+
+.bg-usuarios{
+  background-image: url('../img/banner-user.jpg');
+  background-size: cover;
+}

@@ -3,7 +3,7 @@ $(document).ready(function() {
     // Replace onSearchSubmit() and onKeyEnter() with
     // your logic to perform a search and display results
 
-    
+
 
     //Conjuntos Script JS
     $('#show-modal').click(function() {
@@ -32,6 +32,31 @@ $(document).ready(function() {
             })
             .done(function() {
                 $('#actualizarConjunto').modal('show');
+            })
+            .fail(function() {
+            })
+            .always(function() {
+
+            });
+    });
+
+    $('.actualizar-administrador').click(function() {
+        var admin = $(this).attr("data-value");
+        console.log(admin)
+        $.get( 'administradores/editar/'+admin,
+            function(data) {
+              $('#user_active').val(admin)
+              $('#u_identificacion').val(data.identificacion)
+              $('#u_nombres').val(data.nombres)
+              $('#u_apellidos').val(data.apellidos)
+              $('#u_fecha_nacimiento').val(data.fecha_nacimiento)
+              $('#u_email').val(data.email)
+              $('#u_telefono').val(data.telefono)
+              $('#u_celular').val(data.celular)
+              $('#u_username').val(data.username)
+            })
+            .done(function() {
+                $('#modal-actualizar-administrador').modal('show');
             })
             .fail(function() {
             })

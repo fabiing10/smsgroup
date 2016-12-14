@@ -43,19 +43,11 @@
                     <!-- END BREADCRUMB -->
                     <div class="container-md-height m-b-20">
                         <div class="row row-md-height">
-                            <div class="col-lg-7 col-md-6 col-md-height col-middle bg-white">
+                            <div class="col-lg-7 col-md-6 col-md-height col-middle bg-usuarios" style="padding: 8% 0px;">
                                 <!-- START PANEL -->
                                 <div class="full-height">
                                     <div class="panel-body text-center">
-                                        <a href="usuarios">
-                                            <i class="fa fa-user" style="font-size: 60px;margin-right: 15px;"></i>
-                                        </a>
-                                        <a href="apartamentos">
-                                            <i class="fa fa-building" style="font-size: 60px;margin-right: 15px;"></i>
-                                        </a>
-                                        <a href="zonas">
-                                            <i class="fa fa-building-o" style="font-size: 60px;"></i>
-                                        </a>
+
 
                                     </div>
                                 </div>
@@ -187,9 +179,30 @@
 <script src="{{ asset('build/assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js') }}" type="text/javascript"></script>
 <script type="text/javascript" src="{{ asset('build/assets/plugins/datatables-responsive/js/datatables.responsive.js') }}"></script>
 <script type="text/javascript" src="{{ asset('build/assets/plugins/datatables-responsive/js/lodash.min.js') }}"></script>
+<script src="{{ asset('build/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js') }}" type="text/javascript"></script>
 @stop
 
 @section('specific_js')
 <script src="{{ asset('build/assets/js/init_a.js') }}" type="text/javascript"></script>
 <script src="{{ asset('build/assets/js/datatables.js') }}" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    // Initializes search overlay plugin.
+    // Replace onSearchSubmit() and onKeyEnter() with
+    // your logic to perform a search and display results
+    $( "#fecha_nacimiento" ).datepicker({
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true
+    });
+    $( "#u_fecha_nacimiento" ).datepicker({
+          dateFormat: 'yy-mm-dd',
+          changeMonth: true,
+          changeYear: true
+    });
+
+  });
+</script>
 @stop

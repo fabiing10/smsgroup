@@ -43,7 +43,7 @@
                         <!-- END BREADCRUMB -->
                         <div class="container-md-height m-b-20">
                             <div class="row row-md-height">
-                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-white">
+                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-admin">
                                     <!-- START PANEL -->
                                     <div class="full-height">
                                         <div class="panel-body text-center">
@@ -61,7 +61,7 @@
                                         </div>
                                         <div class="panel-body">
                                             <h3>Administradores</h3>
-                                            <p>Breaking convention again, we have inctroduced a notification system which variates based on the type and level of importance of the message. Thanks to this, an alert by the side of your screen would easily catch your attention.</p>
+                                            <p>Sr. Administrador le damos la bienvenida a la plataforma de administración del conjunto, este es un espacio Desarrollado para optimizar sus funciones como administrador, En esta plataforma encontrará las herramientas necesarias para atender cada uno de los requerimientos de la copropiedad.</p>
 
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
 
 
                     <div class="panel-heading">
-                        <div class="panel-title">Pages Default Tables Style
+                        <div class="panel-title">Usuarios
                         </div>
                         <div class="pull-right" style="width: 50%;">
                             <div class="col-xs-6">
@@ -188,4 +188,24 @@
 @section('specific_js')
     <script src="{{ asset('build/assets/js/init.js') }}" type="text/javascript"></script>
     <script src="{{ asset('build/assets/js/datatables.js') }}" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        // Initializes search overlay plugin.
+        // Replace onSearchSubmit() and onKeyEnter() with
+        // your logic to perform a search and display results
+        $( "#fecha_nacimiento" ).datepicker({
+              dateFormat: 'yy-mm-dd',
+              changeMonth: true,
+              changeYear: true
+        });
+        $( "#u_fecha_nacimiento" ).datepicker({
+              dateFormat: 'yy-mm-dd',
+              changeMonth: true,
+              changeYear: true
+        });
+
+      });
+    </script>
 @stop
