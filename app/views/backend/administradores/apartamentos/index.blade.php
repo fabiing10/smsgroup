@@ -43,19 +43,11 @@
                         <!-- END BREADCRUMB -->
                         <div class="container-md-height m-b-20">
                             <div class="row row-md-height">
-                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-white">
+                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-apartamento">
                                     <!-- START PANEL -->
                                     <div class="full-height">
                                         <div class="panel-body text-center">
-                                            <a href="usuarios">
-                                                <i class="fa fa-user" style="font-size: 60px;margin-right: 15px;"></i>
-                                            </a>
-                                            <a href="apartamentos">
-                                                <i class="fa fa-building" style="font-size: 60px;margin-right: 15px;"></i>
-                                            </a>
-                                            <a href="zonas">
-                                                <i class="fa fa-building-o" style="font-size: 60px;"></i>
-                                            </a>
+
 
                                         </div>
                                     </div>

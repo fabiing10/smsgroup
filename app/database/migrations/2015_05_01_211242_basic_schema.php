@@ -78,6 +78,22 @@ class BasicSchema extends Migration {
         });
 
         /* #4 Create Table Zonas */
+        Schema::create('documentos', function($table){
+            $table->increments('id');
+            $table->string('nombre');
+            $table->string('categoria');
+            $table->string('tipo',50);
+            $table->string('url');
+            $table->date('fecha');
+            $table->text('descripcion');
+            $table->integer('conjunto_id')->unsigned();
+            $table->foreign('conjunto_id')
+                ->references('id')->on('conjuntos')
+                ->onDelete('cascade');
+            $table->timestamps();
+        });
+
+        /* #4 Create Table Zonas */
         Schema::create('zonas', function($table){
             $table->increments('id');
             $table->integer('conjunto_id')->unsigned();
@@ -130,7 +146,7 @@ class BasicSchema extends Migration {
             $table->foreign('usuario_id')
                 ->references('id')->on('usuarios')
                 ->onDelete('cascade');
-            $table->string('rol',10);
+            $table->string('rol',25);
             $table->timestamps();
         });
 

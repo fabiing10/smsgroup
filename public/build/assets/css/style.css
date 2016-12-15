@@ -21,3 +21,13 @@
   background-image: url('../img/banner-user.jpg');
   background-size: cover;
 }
+
+.bg-apartamento{
+  background-image: url('../img/banner-apartamento.jpg');
+  background-size: cover;
+}
+
+.bg-unidades{
+  background-image: url('../img/banner-unidades.jpg');
+  background-size: cover;
+}

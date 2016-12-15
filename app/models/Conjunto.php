@@ -9,6 +9,10 @@ class Conjunto extends \Eloquent {
         return $this->hasMany('Zona');
     }
 
+    public function documentos(){
+        return $this->hasMany('Documento');
+    }
+
     public function noticias(){
         return $this->hasMany('Noticia');
     }

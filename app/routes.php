@@ -44,15 +44,10 @@ Route::group(array('before' => 'auth'), function()
         Route::get('/adjunto/{id}', array('uses' => 'FilesController@link_adjunto','as' => 'adjuntoFile'));
     });
 
-
-
-
     //Routers Super Administrator
     Route::group(array('prefix' => 'admin','before' => 'admin_access'), function()
     {
-
 				Route::get('/', array('uses' => 'AdminController@dashboardSuperAdmin','as' => 'dashboardSuperAdmin'));
-
         Route::group(array('prefix' => 'conjuntos'), function()
         {
             Route::get('/', array('uses' => 'ConjuntoController@index','as' => 'conjuntoIndex'));
@@ -154,6 +149,15 @@ Route::group(array('before' => 'auth'), function()
                 Route::get('/reporte/{id}', array('uses' => 'MensajeController@adminListarReporteMensajeId','as' => 'adminListarReporteId'));
 
             });
+
+						//Anuncios Routers
+						Route::group(array('prefix' => 'documentos'), function() {
+								Route::get('/', array('uses' => 'DocumentosController@index','as' => 'DocumentosIndex'));
+								Route::post('/crear', array('uses' => 'AnunciosController@store','as' => 'anuncioStore'));
+								Route::get('/listar/{id}', array('uses' => 'MensajeController@adminListarMensajeId','as' => 'adminListarId'));
+								Route::get('/reporte/{id}', array('uses' => 'MensajeController@adminListarReporteMensajeId','as' => 'adminListarReporteId'));
+
+						});
 
         });
 
