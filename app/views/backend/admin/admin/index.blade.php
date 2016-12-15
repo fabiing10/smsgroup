@@ -25,9 +25,6 @@
     <!-- START PAGE CONTENT WRAPPER -->
     <div class="page-content-wrapper">
         <!-- START PAGE CONTENT -->
-
-
-
         <div class="content">
             <!-- START JUMBOTRON -->
             <div class="jumbotron" data-pages="parallax">
@@ -38,7 +35,6 @@
                             <li>
                                 <p>Inicio</p>
                             </li>
-
                         </ul>
                         <!-- END BREADCRUMB -->
                         <div class="container-md-height m-b-20">

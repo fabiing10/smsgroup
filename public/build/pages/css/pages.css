@@ -254,7 +254,7 @@ body.dashboard .page-container {
 */
 .page-sidebar {
   width: 280px;
-  background-color: #000000;
+  background-color: #232730;
   z-index: 1000;
   left: -210px;
   position: fixed;
@@ -283,7 +283,7 @@ body.dashboard .page-container {
 .page-sidebar button:visited,
 .page-sidebar a:focus,
 .page-sidebar button:focus {
-  color: #788195;
+  color: #fff;
 }
 .page-sidebar .scroll-element {
   visibility: hidden;
@@ -504,7 +504,7 @@ body.dashboard .page-container {
   list-style: none;
   clear: both;
   margin: 0 0 10px 0;
-  background-color: #21252d;
+  background-color: #0b1725;
   padding: 18px 0 10px 0;
 }
 .page-sidebar .sidebar-menu .menu-items > li ul.sub-menu > li {
@@ -569,7 +569,8 @@ body.dashboard .page-container {
   font-weight: bold;
 }
 .icon-thumbnail > i {
-  font-size: 14px;
+    font-size: 14px;
+    color: white;
 }
 .nav-collapse.collapse {
   height: 100%  !important;

@@ -56,6 +56,7 @@ class UsuarioController extends \BaseController {
             $usuario->celular = Input::get('celular');
             $usuario->genero = Input::get('genero');
             $usuario->rol = "Usuario";
+						$usuario->active = 1;
             $usuario->username = Input::get('username');
             $usuario->password = Hash::make(Input::get('password'));
             $usuario->save();

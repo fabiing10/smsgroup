@@ -153,10 +153,7 @@ Route::group(array('before' => 'auth'), function()
 						//Anuncios Routers
 						Route::group(array('prefix' => 'documentos'), function() {
 								Route::get('/', array('uses' => 'DocumentosController@index','as' => 'DocumentosIndex'));
-								Route::post('/crear', array('uses' => 'AnunciosController@store','as' => 'anuncioStore'));
-								Route::get('/listar/{id}', array('uses' => 'MensajeController@adminListarMensajeId','as' => 'adminListarId'));
-								Route::get('/reporte/{id}', array('uses' => 'MensajeController@adminListarReporteMensajeId','as' => 'adminListarReporteId'));
-
+								Route::post('/crear', array('uses' => 'DocumentosController@store','as' => 'DocumentosStore'));
 						});
 
         });
@@ -198,6 +195,11 @@ Route::group(array('before' => 'auth'), function()
             Route::get('/', array('uses' => 'PublicidadController@index','as' => 'publicidadIndex'));
 
         });
+
+				Route::group(array('prefix' => 'documentos'), function() {
+						Route::get('/', array('uses' => 'DocumentosController@indexHome','as' => 'DocumentosIndex'));
+
+				});
 
 
 

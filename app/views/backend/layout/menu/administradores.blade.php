@@ -58,6 +58,11 @@
                 <span class="icon-thumbnail"><i class="fa fa-pie-chart"></i></span>
             </li>
 
+            <li class="">
+                {{ HTML::linkRoute('DocumentosIndex', 'Documentos') }}
+                <span class="icon-thumbnail"><i class="fa fa-pie-chart"></i></span>
+            </li>
+
         </ul>
         <div class="clearfix"></div>
     </div>

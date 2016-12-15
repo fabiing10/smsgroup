@@ -57,7 +57,7 @@
                 <!-- START JUMBOTRON -->
                 <div class="jumbotron" data-pages="parallax" data-social="cover">
                     <div class="cover-photo">
-                        <img alt="Cover photo" src="{{ asset('uploads/banners/anuncio_banner.png') }}" />
+                        <img alt="Cover photo" src="{{ asset('uploads/banners/banner-anuncio.jpg') }}" />
                     </div>
                     <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
                         <div class="inner">

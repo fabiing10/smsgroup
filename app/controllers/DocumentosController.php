@@ -18,9 +18,29 @@ class DocumentosController extends \BaseController {
       $conjunto = $adminConjunto->conjunto_id;
 
       $documentos = Documento::where('conjunto_id', $conjunto)->get();
-      return $documentos;
+			return View::make('backend.administradores.documentos.index')->with('documentos', $documentos);
 	}
 
+
+				public function indexHome(){
+					$user = Auth::user();
+					$querySet = DB::table('usuarios as usuario')
+	            ->join('usuario_apartamento as u_a', 'usuario.id', '=', 'u_a.usuario_id')
+	            ->join('apartamentos as apartamento', 'u_a.apartamento_id', '=', 'apartamento.id')
+	            ->join('zonas as zona', 'apartamento.zona_id', '=', 'zona.id')
+	            ->join('conjuntos as conjunto', 'zona.conjunto_id', '=', 'conjunto.id')
+	            ->select('conjunto.id')
+	            ->where('usuario.id', '=', $user->id)
+	            ->get();
+
+					foreach ($querySet as $q) {
+						$conjunto_id = $q->id;
+					}
+					$conjunto = $conjunto_id;
+
+					$documentos = Documento::where('conjunto_id', $conjunto)->get();
+					return View::make('backend.usuarios.documentos.index')->with('documentos', $documentos);
+				}
 
 
 
@@ -51,9 +71,9 @@ class DocumentosController extends \BaseController {
 
       if(Input::hasFile('file_')){
 
-          $mensaje->adjunto = true;
+
           $this->isAttachment = true;
-          $directory = public_path().'/uploads';
+          $directory = public_path().'/uploads/documents';
           $file = Input::file('file_');
 
           if(is_array($file))
@@ -87,14 +107,19 @@ class DocumentosController extends \BaseController {
       }
 
       if($this->isAttachment){
+				$user = Auth::user();
+				$admin = Administrador::where('usuario_id', '=', $user->id)->firstOrFail();
+				$adminConjunto = AdministradorConjunto::where('administrador_id', '=', $admin->id)->firstOrFail();
+				$conjunto = $adminConjunto->conjunto_id;
+
           //Save File in Database
           $documento = new Documento();
-          $documento->nombre = Input::get('nombre');
+          $documento->nombre = Input::get('documento');
           $documento->categoria = Input::get('categoria');
-          $documento->descripcion = Input::get('descripcion');
+          $documento->descripcion = 'none';
           $documento->url = $data;
           $documento->tipo = $mimeType;
-          $documento->conjunto_id = Input::get('conjunto_id');
+          $documento->conjunto_id = $conjunto;
           $documento->fecha = $fecha;
           $documento->save();
 
