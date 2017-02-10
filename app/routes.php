@@ -169,7 +169,6 @@ Route::group(array('before' => 'auth'), function()
         });
 
         Route::get('/activar', array('uses' => 'UsuarioController@activar','as' => 'activarIndex'));
-
         Route::post('/actualizar', array('uses' => 'UsuarioController@actualizar','as' => 'activarIndex'));
 
         Route::group(array('prefix' => 'mensajes'), function()
@@ -193,11 +192,12 @@ Route::group(array('before' => 'auth'), function()
         Route::group(array('prefix' => 'publicidad'), function()
         {
             Route::get('/', array('uses' => 'PublicidadController@index','as' => 'publicidadIndex'));
+						Route::get('/{id}', array('uses' => 'PublicidadController@PublicidadId','as' => 'PublicidadId'));
 
         });
 
 				Route::group(array('prefix' => 'documentos'), function() {
-						Route::get('/', array('uses' => 'DocumentosController@indexHome','as' => 'DocumentosIndex'));
+						Route::get('/', array('uses' => 'DocumentosController@indexHome','as' => 'DocumentosIndexUser'));
 
 				});
 

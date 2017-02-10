@@ -12,7 +12,18 @@
     @include('backend.layout.head')
 
 @stop
-
+@section('css')
+<style>
+    .table thead tr th, .table tbody tr td {
+        text-align: center;
+    }
+    .widget {
+        position: relative;
+        width: 30%;
+        float: left;
+    }
+</style>
+@stop
 
 
 
@@ -36,11 +47,11 @@
                         <!-- END BREADCRUMB -->
                         <div class="container-md-height m-b-20">
                             <div class="row row-md-height">
-                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-white">
+                                <div class="col-lg-7 col-md-6 col-md-height col-middle bg-usuarios">
                                     <!-- START PANEL -->
                                     <div class="full-height">
                                         <div class="panel-body text-center">
-                                            <img  src="{{ asset('build/assets/img/logo.jpg') }}" alt="" width="150">
+
                                         </div>
                                     </div>
                                     <!-- END PANEL -->
@@ -54,7 +65,7 @@
                                         </div>
                                         <div class="panel-body">
                                             <h3>Plataforma de Administracion</h3>
-                                            <p>Breaking convention again, we have inctroduced a notification system which variates based on the type and level of importance of the message. Thanks to this, an alert by the side of your screen would easily catch your attention.</p>
+                                            <p></p>
                                             <br>
 
                                         </div>
@@ -69,59 +80,60 @@
             <!-- END JUMBOTRON -->
             <!-- START CONTAINER FLUID -->
             <div class="container-fluid container-fixed-lg">
-                <div class="row">
+              <div class="row">
+                <ul class="blocks no-space blocks-100 blocks-xlg-3 blocks-md-2">
+                <li class="widget">
+                      <div class="cover overlay overlay-hover">
 
-                    <div class="col-sm-3">
-                        <!-- START PANEL -->
-                        <div id="portlet-linear" class="panel panel-default">
-                            <div class="panel-heading ">
-                                <div class="panel-title">Conjuntos
-                                </div>
-                                <div class="panel-controls">
-                                    <ul>
-                                        <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i class="portlet-icon portlet-icon-collapse"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i class="portlet-icon portlet-icon-refresh"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-close" data-toggle="close"><i class="portlet-icon portlet-icon-close"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="overlay-panel overlay-fade overlay-background overlay-background-fixed text-center vertical-align" style="
+          background: rgba(244, 67, 54, 0.89);
+          ">
+                          <div class="vertical-align-middle">
+                            <h3 class="widget-title margin-bottom-20">Conjuntos</h3>
+                            <div class="widget-time ">
+                              <img src="{{ asset('uploads/banners/documentos.png') }}" alt="..." style="width: 98px;">
                             </div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="semi-bold">{{$conjuntos}}</span></h3>
-                            </div>
+                            <a href="admin/conjuntos" class="btn btn-outline btn-inverse">Ingresar</a>
+                          </div>
                         </div>
-                        <!-- END PANEL -->
-                    </div>
+                      </div>
+                    </li>
+                    <li class="widget">
+                      <div class="cover overlay overlay-hover">
 
-                    <div class="col-sm-3">
-                        <!-- START PANEL -->
-                        <div id="portlet-linear" class="panel panel-default">
-                            <div class="panel-heading ">
-                                <div class="panel-title">Administradores
-                                </div>
-                                <div class="panel-controls">
-                                    <ul>
-                                        <li><a href="#" class="portlet-collapse" data-toggle="collapse"><i class="portlet-icon portlet-icon-collapse"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-refresh" data-toggle="refresh"><i class="portlet-icon portlet-icon-refresh"></i></a>
-                                        </li>
-                                        <li><a href="#" class="portlet-close" data-toggle="close"><i class="portlet-icon portlet-icon-close"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
+                        <div class="overlay-panel overlay-fade overlay-background overlay-background-fixed text-center vertical-align" style="
+          background: rgba(96, 125, 139, 0.89);
+          ">
+                          <div class="vertical-align-middle">
+                            <h3 class="widget-title margin-bottom-20">Administradores</h3>
+                            <div class="widget-time">
+                            <img src="{{ asset('uploads/banners/administradores.png') }}" alt="..." style="width: 84px;">
+                            <br> <br>
                             </div>
-                            <div class="panel-body">
-                                <h3>
-                                    <span class="semi-bold">{{$admin}}</span> </h3>
-                            </div>
+                            <a href="admin/administradores" class="btn btn-outline btn-inverse">Ingresar</a>
+                          </div>
                         </div>
-                        <!-- END PANEL -->
-                    </div>
+                      </div>
+                    </li>
+                    <li class="widget">
+                      <div class="cover overlay overlay-hover">
 
-                </div>
+                        <div class="overlay-panel overlay-fade overlay-background overlay-background-fixed text-center vertical-align" style="
+          background: rgba(236, 119, 28, 0.96);
+          ">
+                          <div class="vertical-align-middle">
+                            <h3 class="widget-title margin-bottom-20">Publicidad</h3>
+                            <div class="widget-time">
+                            <img src="{{ asset('uploads/banners/noticias.png') }}" alt="..." style="width: 84px;">
+                            <br> <br>
+                            </div>
+                            <a href="admin/publicidad" class="btn btn-outline btn-inverse">Ingresar</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+              </div>
             </div>
             <!-- END CONTAINER FLUID -->
 

@@ -10,19 +10,31 @@ class PublicidadController extends \BaseController {
 
     public function index(){
 
-        /*$query = DB::table('publicidad')
+        $publicidades = DB::table('publicidad')
             ->join('publicidad_conjunto as p_c', 'publicidad.id', '=', 'p_c.publicidad_id')
             ->join('conjuntos as conjunto', 'p_c.conjunto_id', '=', 'conjunto.id')
             ->join('zonas as zona', 'conjunto.id', '=', 'zona.conjunto_id')
             ->select('publicidad.id','publicidad.tienda','publicidad.logo','publicidad.local','publicidad.local','publicidad.titulo','publicidad.descripcion_corta','publicidad.descripcion'
                 ,'publicidad.valor','publicidad.fecha','publicidad.img_publicidad','publicidad.link','conjunto.nombre')
-            ->where('u_apartamento.usuario_id', '=', $usuario->id)
-            ->get();*/
+            ->get();
 
-        //return View::make('backend.usuarios.publicidad.index');\
+        return View::make('backend.usuarios.publicidad.index')->with('publicidades', $publicidades);
 
-        return "Cargando al servidor....";
 
+
+
+    }
+
+    public function PublicidadId($id){
+      $publicidad = DB::table('publicidad')
+          ->join('publicidad_conjunto as p_c', 'publicidad.id', '=', 'p_c.publicidad_id')
+          ->join('conjuntos as conjunto', 'p_c.conjunto_id', '=', 'conjunto.id')
+          ->join('zonas as zona', 'conjunto.id', '=', 'zona.conjunto_id')
+          ->select('publicidad.id','publicidad.tienda','publicidad.logo','publicidad.local','publicidad.local','publicidad.titulo','publicidad.descripcion_corta','publicidad.descripcion'
+              ,'publicidad.valor','publicidad.fecha','publicidad.img_publicidad','publicidad.link','conjunto.nombre')
+          ->where('publicidad.id','=',$id)
+          ->get();
+          return $publicidad;
     }
 
 

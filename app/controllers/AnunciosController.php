@@ -23,13 +23,10 @@ class AnunciosController extends \BaseController {
 	public function index()
 	{
         $usuario = Auth::user();
-
         $anuncios = $this->listarAnunciosConjunto();
 
         return View::make('backend.usuarios.anuncios.index')
             ->with('anuncios', $anuncios);
-
-
 
 	}
 

@@ -35,6 +35,10 @@
                 <a href="/usuario/documentos"><span class="title">Documentos</span></a>
                 <span class="icon-thumbnail"><i class="pg-home"></i></span>
             </li>
+            <li class="m-t-5 ">
+                <a href="/usuario/publicidad"><span class="title">Publicidad</span></a>
+                <span class="icon-thumbnail"><i class="pg-home"></i></span>
+            </li>
 
 
         </ul>
