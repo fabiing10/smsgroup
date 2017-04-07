@@ -45,7 +45,7 @@
         <div class="container-fluid container-fixed-lg sm-p-l-20 sm-p-r-20">
             <div class="inner">
                 <div class="pull-bottom bottom-left m-b-40">
-                    <h5 class="text-white no-margin">Conjunto Residencial</h5>
+                    <h5 class="text-white no-margin">Conjunto Industrial</h5>
                     <h1 class="text-white no-margin"><span class="semi-bold">{{ $conjunto->nombre}}</span></h1>
                 </div>
             </div>

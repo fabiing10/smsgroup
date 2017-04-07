@@ -64,6 +64,42 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group form-group-default">
+                            <label>Zona</label>
+                            <select class="full-width" data-init-plugin="select2" id="zona_select_update" name="zona_select_update">
+                                    <optgroup label="Unidad">
+                                     <option value="-1">Seleccione una Unidad</option>
+                                    @foreach($zonas as $zona)
+                                          <option value="{{ Crypt::encrypt($zona->id) }}">{{ $zona->tipo }} - {{ $zona->value }}</option>
+
+                                    @endforeach
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group form-group-default">
+                            <label>Apartamento</label>
+                            <select class="full-width" data-init-plugin="select2" id="apartamento_select_update" name="apartamento_select_update">
+                                <optgroup label="Seleccione un apartamento" id="inner-html">
+
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="border: 1px solid rgb(232, 231, 231);padding: 3px 15px;margin: 9px 0px;">
+                        <div class="radio radio-success">
+                            <input type="radio" checked="checked" value="true" name="propietario_update" id="yes">
+                            <label for="yes">Propietario</label>
+                            <input type="radio"  value="false" name="propietario_update" id="no">
+                            <label for="no">Arrendatario</label>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="row">
                     <div class="col-sm-6">

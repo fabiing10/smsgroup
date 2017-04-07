@@ -22,7 +22,7 @@
                                     <option value="Casa">Casa</option>
                                     <option value="Local">Local</option>
                                     <option value="Oficina">Oficina</option>
-
+                                      <option value="Bodega">Bodega</option>
                                 </optgroup>
 
                             </select>

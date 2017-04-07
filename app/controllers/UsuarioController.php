@@ -134,12 +134,36 @@ class UsuarioController extends \BaseController {
 						$usuario->email = Input::get('u_email');
 						$usuario->telefono = Input::get('u_telefono');
 						$usuario->celular = Input::get('u_celular');
+
+
 						$usuario->active = 1;
 						//$usuario->genero = Input::get('genero');
 						$usuario->active = 1;
 						$usuario->username = Input::get('u_username');
 						$usuario->password = Hash::make(Input::get('u_password'));
 						$usuario->save();
+
+
+
+						$query = UsuarioApartamento::where('usuario_id',$usuario->id)->get();
+						foreach ($query as $q) {
+							$ua_id = $q->id;
+						}
+						$ua = UsuarioApartamento::find($ua_id);
+            $ua->usuario_id = $usuario->id;
+						$apto_edit = Input::get('apartamento_select_update');
+						if($apto_edit != null && $apto_edit != ""){
+								$ua->apartamento_id = $apto_edit;
+						}
+
+            if(Input::get('propietario_update') == "true"){
+                $ua->propietario = '1';
+            }else{
+                $ua->propietario = '0';
+            }
+
+            $ua->save();
+
 
             $page = Input::get('page');
             if($page == "default"){

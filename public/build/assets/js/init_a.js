@@ -81,6 +81,34 @@ $(document).ready(function() {
 
     });
 
+    $('#zona_select_update').change(function() {
+        console.log("Update User")
+        var zona = $(this).val();
+        $('#apartamento_select_update').empty();
+        var select = document.getElementById('apartamento_select_update');
+        $.get( 'apartamentos/listar/'+zona,
+            function(data) {
+
+                var list = $('#apartamento_select_update');
+                $.each(data, function(idx, obj) {
+
+                    var option = new Option(obj.apartamento, obj.id);
+                    select.add(option);
+
+                });
+
+            })
+            .done(function() {
+
+            })
+            .fail(function() {
+            })
+            .always(function() {
+
+            });
+
+    });
+
 
 
     $('.actualizar-conjunto').click(function() {
