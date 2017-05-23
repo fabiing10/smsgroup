@@ -41,7 +41,7 @@
                                     <optgroup label="Dirigido a">
                                         <option value="todos">Todos</option>
                                         <option value="zona">Zona</option>
-                                        <option value="apartamento">Apartamento</option>
+                                        <option value="apartamento">Bodegas</option>
                                     </optgroup>
                                 </select>
                             </div>
@@ -60,7 +60,7 @@
 
                         <div class="col-md-3" style="display: none;" id="apartamento_display">
                             <div class="form-group form-group-default">
-                                <label>Seleccione un partamento</label>
+                                <label>Seleccione una Bodega</label>
                                 <select class="full-width" data-init-plugin="select2" id="apartamento_select" name="apartamento_select">
                                     <optgroup label="Seleccione una zona" id="inner-apartamento">
 

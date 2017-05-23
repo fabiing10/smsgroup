@@ -65,7 +65,7 @@
                                                         <thead>
                                                         <tr>
                                                             <th style="width: auto;">Unidad</th>
-                                                            <th style="width: auto;">Apartamento</th>
+                                                            <th style="width: auto;">Bodega</th>
                                                             <th style="width: auto;">Nombres</th>
                                                             <th style="width: auto;">Apellidos</th>
                                                             <th style="width: auto;">Leido</th>
@@ -109,7 +109,7 @@
                                                             <th style="width: auto;">Nombres</th>
                                                             <th style="width: auto;">Apellidos</th>
                                                             <th style="width: auto;">Unidad</th>
-                                                            <th style="width: auto;">Apartamento</th>
+                                                            <th style="width: auto;">Bodega</th>
                                                             <th style="width: auto;">Id</th>
                                                         </tr>
                                                         </thead>
