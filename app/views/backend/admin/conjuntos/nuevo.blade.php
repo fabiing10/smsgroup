@@ -5,7 +5,7 @@
             <div class="modal-header clearfix ">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="pg-close fs-14"></i>
                 </button>
-                <h4 class="p-b-5"><span class="semi-bold">Nuevo</span> Conjunto Residencial</h4>
+                <h4 class="p-b-5"><span class="semi-bold">Nuevo</span> Parque o Zona</h4>
             </div>
             <div class="modal-body">
                 <p class="small-text">Es facil! Solo debes completar el siguiente formulario</p>
@@ -24,8 +24,7 @@
                             <label>Tipo de P.H</label>
                             <select class="full-width" data-init-plugin="select2" id="tipo" name="tipo">
                                 <optgroup label="Tipo Conjunto">
-                                    <option value="Apartamentos">Apartamentos</option>
-                                    <option value="Casas">Casas</option>
+                                    <option value="Locales">Bodegas</option>
                                     <option value="Locales">Locales</option>
                                     <option value="Oficinas">Oficinas</option>
                                 </optgroup>
