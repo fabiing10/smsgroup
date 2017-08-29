@@ -160,10 +160,12 @@
                                             <button type="button" class="btn btn-default btn-cons eliminar-conjunto"  style="width: 100%;" data-value="{{Crypt::encrypt($conj->id)}}"><i class="fa fa-trash-o"></i> Eliminar</button>
                                         </li>
                                         <li>
+                                            <button type="button" class="btn btn-default btn-cons cargar-conjunto"  style="width: 100%;" data-value="{{Crypt::encrypt($conj->id)}}"><i class="fa fa-trash-o"></i> Cargar Datos</button>
+                                        </li>
+                                        <li>
                                             <a href="conjuntos/{{Crypt::encrypt($conj->id)}}" style="padding: 0px;">
                                                 <button type="button" class="btn btn-default btn-cons"  style="width: 100%;" data-value="{{Crypt::encrypt($conj->id)}}"><i class="fa fa-outdent"></i> Detalles</button>
                                             </a>
-
                                         </li>
                                     </ul>
                                 </div>
@@ -208,6 +210,7 @@
 @include('backend.admin.conjuntos.nuevo')
 @include('backend.admin.conjuntos.eliminar')
 @include('backend.admin.conjuntos.actualizar')
+@include('backend.admin.conjuntos.cargar')
 
 @stop
 

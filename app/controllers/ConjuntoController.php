@@ -7,6 +7,14 @@ class ConjuntoController extends \BaseController {
 	 *
 	 * @return Response
 	 */
+	private $fileSave;
+	private $isAttachment;
+	private $id_mu;
+	private $conjunto_id;
+	private $zona_value;
+	private $zona_id;
+	private $zonas_count;
+
 	public function index()
 	{
         $conjunto = new Conjunto();
@@ -113,6 +121,126 @@ class ConjuntoController extends \BaseController {
             Session::flash('message', 'Successfully created nerd!');
             return Redirect::to('admin/conjuntos');
         }
+
+
+	}
+
+	public function cargarData(){
+
+		$this->conjunto_id = Crypt::decrypt(Input::get('conjunto_id'));
+
+		if(Input::hasFile('data_conjunto')){
+				$fecha = 'document';
+				$directory = public_path().'/uploads/data/';
+				$file = Input::file('data_conjunto');
+				$filename = $fecha.'-'.sha1(time());
+				$extension = $file->getClientOriginalExtension();
+				$size = $file->getClientSize();
+				$mimeType = $file->getClientMimeType();
+				$data = $filename.'.'.$extension;
+				$uploadSuccess = Input::file('data_conjunto')->move($directory,$data);
+
+				if( $uploadSuccess ) {
+						$this->fileSave = true;
+				} else {
+						$this->fileSave = false;
+				}
+
+				$zonas_get = DB::table('zonas as zona')
+						->join('conjuntos as conjunto', 'zona.conjunto_id', '=', 'conjunto.id')
+						->select('zona.*')
+						->where('conjunto.id', '=', $this->conjunto_id)
+						->where('zona.tipo', '=', 'Bodega')
+						->get();
+
+				$this->zonas_count = DB::table('zonas as zona')
+								->join('conjuntos as conjunto', 'zona.conjunto_id', '=', 'conjunto.id')
+								->select('zona.*')
+								->where('conjunto.id', '=', $this->conjunto_id)
+								->where('zona.tipo', '=', 'Bodega')
+								->count();
+
+					foreach($zonas_get as $z){
+						$this->zona_value = $z->value;
+						$this->zona_id = $z->id;
+					}
+
+					//$this->valuee = array();
+				Excel::load($uploadSuccess, function($reader) {
+						$this->i = 0;
+						$reader->each(function($sheet) {
+							//Elimina el apartamentos
+							//array_push($this->valuee, $sheet->zona_valor);
+
+								/*if($this->zonas_count > 0){
+									if($this->zona_value == $sheet->zona_valor){
+										$zona_id_data = $this->zona_id;
+									}else{
+										//Save Zona
+										$zona = new Zona();
+										$zona->conjunto_id = $this->conjunto_id;
+										$zona->tipo = $sheet->zona_tipo;
+										$zona->value = $sheet->zona_valor;
+										$zona->save();
+										$zona_id_data = $zona->id;
+									}
+
+								}else{
+									$zona = new Zona();
+									$zona->conjunto_id = $this->conjunto_id;
+									$zona->tipo = $sheet->zona_tipo;
+									$zona->value = $sheet->zona_valor;
+									$zona->save();
+
+									$zona_id_data = $zona->id;
+								}*/
+
+								$zona = new Zona();
+								$zona->conjunto_id = $this->conjunto_id;
+								$zona->tipo = $sheet->zona_tipo;
+								$zona->value = $sheet->zona_valor;
+								$zona->save();
+								$zona_id_data = $zona->id;
+
+
+									// Add Bodega
+								$apartamento = new Apartamento();
+								$apartamento->apartamento = $sheet->bodega;
+								$apartamento->zona_id = $zona_id_data;
+								$apartamento->save();
+
+								//Add user
+								$usuario = new Usuario();
+		            $usuario->identificacion = $sheet->identificacion;
+		            $usuario->nombres = $sheet->nombres;
+		            $usuario->apellidos = $sheet->apellidos;
+		            $usuario->email = $sheet->email;
+		            $usuario->celular = $sheet->celular;
+		            $usuario->genero = $sheet->genero;
+		            $usuario->rol = $sheet->rol;
+								$usuario->active = $sheet->active;
+		            $usuario->username = $sheet->identificacion;
+		            $usuario->password = Hash::make($sheet->identificacion);
+		            $usuario->save();
+
+
+		            $ua = new UsuarioApartamento();
+		            $ua->usuario_id = $usuario->id;
+		            $ua->apartamento_id = $apartamento->id;
+								$ua->propietario = $sheet->propietario;
+		            $ua->save();
+
+
+					 });
+
+				});
+
+		}else{
+
+
+
+		}
+
 
 
 	}

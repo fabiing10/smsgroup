@@ -56,6 +56,7 @@ Route::group(array('before' => 'auth'), function()
             Route::post('/eliminar', array('uses' => 'ConjuntoController@destroy','as' => 'conjuntoDestroy'));
             Route::get('/editar/{id}', array('uses' => 'ConjuntoController@edit','as' => 'conjuntoEdit'));
             Route::post('/actualizar', array('uses' => 'ConjuntoController@update','as' => 'conjuntoUpdate'));
+						Route::post('/cargar', array('uses' => 'ConjuntoController@cargarData','as' => 'cargarConjunto'));
 
         });
 
@@ -98,6 +99,7 @@ Route::group(array('before' => 'auth'), function()
                 Route::get('/editar/{id}', array('uses' => 'ZonaController@edit','as' => 'zonaEdit'));
                 Route::post('/actualizar', array('uses' => 'ZonaController@update','as' => 'zonaUpdate'));
                 Route::get('/listar', array('uses' => 'ZonaController@listarZonasConjunto','as' => 'zonaListar'));
+
             });
 
             //Apartamento Routers
@@ -200,9 +202,6 @@ Route::group(array('before' => 'auth'), function()
 						Route::get('/', array('uses' => 'DocumentosController@indexHome','as' => 'DocumentosIndexUser'));
 
 				});
-
-
-
 
     });
 

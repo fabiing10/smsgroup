@@ -24,7 +24,7 @@
                         <div class="col-sm-12">
                             <div class="form-group form-group-default">
                                 <label>Identificacion</label>
-                                <input id="identificacion" name="identificacion" type="text" class="form-control" placeholder="Numero de Identificacion" value="{{$usuario->identificacion}}">
+                                <input id="u_identificacion" name="u_identificacion" type="text" class="form-control" placeholder="Numero de Identificacion" value="{{$usuario->identificacion}}">
                             </div>
                         </div>
                     </div>
@@ -32,13 +32,13 @@
                         <div class="col-sm-6">
                             <div class="form-group form-group-default">
                                 <label>Nombres</label>
-                                <input id="nombres" name="nombres" type="text" class="form-control" placeholder="Nombres" value="{{$usuario->nombres}}">
+                                <input id="u_nombres" name="u_nombres" type="text" class="form-control" placeholder="Nombres" value="{{$usuario->nombres}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form-group-default">
                                 <label>Apellidos</label>
-                                <input id="apellidos" name="apellidos" type="text" class="form-control" placeholder="Apellidos" value="{{$usuario->apellidos}}">
+                                <input id="u_apellidos" name="u_apellidos" type="text" class="form-control" placeholder="Apellidos" value="{{$usuario->apellidos}}">
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@
                         <div class="col-sm-6">
                             <div class="form-group form-group-default" style="padding: 12px 12px;">
                                 <label>Fecha de nacimiento</label>
-                                <input id="fecha_nacimiento" name="fecha_nacimiento" type="text" class="form-control" placeholder="Digite su fecha de Nacimiento" value="{{$usuario->fecha_nacimiento}}">
+                                <input id="u_fecha_nacimiento" name="u_fecha_nacimiento" type="text" class="form-control" placeholder="Digite su fecha de Nacimiento" value="{{$usuario->fecha_nacimiento}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -65,7 +65,7 @@
                         <div class="col-sm-12">
                             <div class="form-group form-group-default">
                                 <label>Email</label>
-                                <input id="email" name="email" type="text" class="form-control" placeholder="example@email.com" value="{{$usuario->email}}">
+                                <input id="u_email" name="u_email" type="text" class="form-control" placeholder="example@email.com" value="{{$usuario->email}}">
                             </div>
                         </div>
                     </div>
@@ -74,13 +74,13 @@
                         <div class="col-sm-6">
                             <div class="form-group form-group-default">
                                 <label>Telefono</label>
-                                <input id="telefono" name="telefono" type="text" class="form-control" placeholder="Telefono" value="{{$usuario->telefono}}">
+                                <input id="u_telefono" name="u_telefono" type="text" class="form-control" placeholder="Telefono" value="{{$usuario->telefono}}">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="form-group form-group-default">
                                 <label>Celular</label>
-                                <input id="celular" name="celular" type="text" class="form-control" placeholder="Celular" value="{{$usuario->celular}}">
+                                <input id="u_celular" name="u_celular" type="text" class="form-control" placeholder="Celular" value="{{$usuario->celular}}">
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@
                         <div class="col-sm-12">
                             <div class="form-group form-group-default">
                                 <label>Username</label>
-                                <input id="username" name="username" type="text" class="form-control" placeholder="Usuario" value="{{$usuario->username}}">
+                                <input id="u_username" name="u_username" type="text" class="form-control" placeholder="Usuario" value="{{$usuario->username}}">
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
                         <div class="col-sm-6">
                             <div class="form-group form-group-default">
                                 <label>Password</label>
-                                <input id="password" name="password" type="password" class="form-control" placeholder="Clave">
+                                <input id="u_password" name="u_password" type="password" class="form-control" placeholder="Clave">
                             </div>
                         </div>
                         <div class="col-sm-6">

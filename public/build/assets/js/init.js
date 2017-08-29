@@ -10,6 +10,13 @@ $(document).ready(function() {
         $('#nuevoConjunto').modal('show');
     });
 
+    $('.cargar-conjunto').click(function() {
+        var conjunto = $(this).attr("data-value");
+        $('#cargarConjunto').modal('show');
+        $('#conjunto_id').val(conjunto);
+
+    });
+
     $('.actualizar-conjunto').click(function() {
         var conjunto = $(this).attr("data-value");
         $.get( 'conjuntos/editar/'+conjunto,
